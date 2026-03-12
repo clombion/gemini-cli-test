@@ -1,0 +1,129 @@
+{
+  "// Schema for stage 1a: Chunk label record": "Output from labelling agents after reading chunks. Contains both scaffold (deterministic) and interpretive (LLM-filled) fields",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stage 1a Chunk Label Record",
+  "type": "object",
+  "properties": {
+    "chunk_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Index of the chunk (scaffold field, deterministic)"
+    },
+    "word_range": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Starting word index in the original transcript"
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Ending word index in the original transcript"
+        }
+      },
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "description": "Word range of the chunk (scaffold field, deterministic)"
+    },
+    "timestamp_range": {
+      "type": ["object", "null"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "description": "Starting timestamp (HH:MM:SS format or other)"
+        },
+        "end": {
+          "type": "string",
+          "description": "Ending timestamp (HH:MM:SS format or other)"
+        }
+      },
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "description": "Timestamp range if applicable (scaffold field, deterministic, may be omitted if no timestamps)"
+    },
+    "speaker_tags": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "List of speakers in this chunk if identified (scaffold field, deterministic, may be omitted if no speakers)"
+    },
+    "word_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Total word count of the chunk (scaffold field, deterministic)"
+    },
+    "raw_source_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Original text of the chunk (scaffold field, deterministic)"
+    },
+    "topic_tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9_]+$",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "Topic tags for this chunk (LLM-filled, alphanumeric with underscores)"
+    },
+    "topic_tags_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Rationale for topic tag assignment (LLM-filled)"
+    },
+    "key_entities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "Key entities mentioned in the chunk (LLM-filled)"
+    },
+    "entities_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Rationale for entity extraction (LLM-filled)"
+    },
+    "conversational_function": {
+      "type": "string",
+      "enum": ["decision", "question", "elaboration", "digression"],
+      "description": "Conversational function of this chunk (LLM-filled)"
+    },
+    "function_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Rationale for conversational function assignment (LLM-filled)"
+    },
+    "speaker_intent": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Intent of the speaker (LLM-filled, always required)"
+    },
+    "intent_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Rationale for intent interpretation (LLM-filled, always required)"
+    }
+  },
+  "required": [
+    "chunk_index",
+    "word_range",
+    "word_count",
+    "raw_source_text",
+    "topic_tags",
+    "topic_tags_rationale",
+    "key_entities",
+    "entities_rationale",
+    "conversational_function",
+    "function_rationale",
+    "speaker_intent",
+    "intent_rationale"
+  ],
+  "additionalProperties": false
+}

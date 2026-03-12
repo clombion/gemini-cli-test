@@ -1,0 +1,42 @@
+{
+  "// Schema for stage 0b: Analysis agent output": "Four agents (timestamp, speaker, density, format) each produce analysis records",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stage 0b Analysis Agent Output",
+  "type": "object",
+  "properties": {
+    "agent_type": {
+      "type": "string",
+      "enum": ["timestamp", "speaker", "density", "format"],
+      "description": "Type of analysis agent"
+    },
+    "findings": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Key findings from analysis"
+    },
+    "recommendations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "recommendation": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Specific recommendation"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Detailed rationale for the recommendation"
+          }
+        },
+        "required": ["recommendation", "rationale"],
+        "additionalProperties": false
+      },
+      "description": "Array of recommendations with rationale"
+    }
+  },
+  "required": ["agent_type", "findings", "recommendations"],
+  "additionalProperties": false
+}

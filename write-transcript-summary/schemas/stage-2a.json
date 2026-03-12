@@ -1,0 +1,39 @@
+{
+  "// Schema for stage 2a: Topic map entry": "Output from topic merging agent that groups related chunks",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stage 2a Topic Map Entry",
+  "type": "object",
+  "properties": {
+    "topic_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]+$",
+      "minLength": 1,
+      "description": "Unique topic identifier (alphanumeric with underscores)"
+    },
+    "topic_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name of the topic"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Detailed description of the topic"
+    },
+    "chunk_ids": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 1,
+      "description": "Array of chunk indices that belong to this topic"
+    },
+    "is_divergent_merge": {
+      "type": "boolean",
+      "description": "Set to true if this topic spans divergent chunks from stage 1b (optional)"
+    }
+  },
+  "required": ["topic_id", "topic_name", "description", "chunk_ids"],
+  "additionalProperties": false
+}

@@ -1,0 +1,28 @@
+{
+  "// Schema for stage 2b: Question set per topic": "Output from question generation agent that creates review questions for each topic",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stage 2b Question Set Per Topic",
+  "type": "object",
+  "properties": {
+    "topic_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]+$",
+      "minLength": 1,
+      "description": "Reference to the topic_id from stage 2a"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\?$",
+        "description": "Question must be non-empty and end with question mark"
+      },
+      "minItems": 3,
+      "maxItems": 6,
+      "description": "Array of 3-6 questions to guide extraction from this topic"
+    }
+  },
+  "required": ["topic_id", "questions"],
+  "additionalProperties": false
+}

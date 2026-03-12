@@ -1,0 +1,35 @@
+{
+  "// Schema for stage 4: Rewritten section per topic": "Output from rewriting agent that generates final prose sections from extracted QA",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stage 4 Rewritten Section Per Topic",
+  "type": "object",
+  "properties": {
+    "topic_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]+$",
+      "minLength": 1,
+      "description": "Reference to the topic_id from stage 2a"
+    },
+    "topic_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name of the topic (from stage 2a)"
+    },
+    "section_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Rewritten prose section for this topic, grounded in QA extracts"
+    },
+    "source_segment_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of source segments (chunks or QA extracts) that contributed to this section"
+    },
+    "has_unsupported_claims": {
+      "type": "boolean",
+      "description": "Set to true if QA grounding found claims with no direct source (optional)"
+    }
+  },
+  "required": ["topic_id", "topic_name", "section_text", "source_segment_count"],
+  "additionalProperties": false
+}

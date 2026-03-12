@@ -1,0 +1,18 @@
+{
+  "conversational_function": [
+    "decision",
+    "question",
+    "elaboration",
+    "digression"
+  ],
+  "timestamp_strategy": [
+    "timestamp-accumulation",
+    "turn-accumulation",
+    "word-count-fallback"
+  ],
+  "speaker_type": [
+    "named",
+    "anonymous",
+    "absent"
+  ]
+}
