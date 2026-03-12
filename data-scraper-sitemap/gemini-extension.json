@@ -1,0 +1,6 @@
+{
+  "name": "data-scraper-sitemap",
+  "version": "1.0.0",
+  "description": "Generate valid WebScraper.io sitemap JSON files for the Chrome extension. Use this skill whenever the user wants to scrape a website, extract structured data from web pages, create a web scraper, build a sitemap for WebScraper.io, or asks for help with data collection from websites. Also trigger on \"scrape\", \"web scraping\", \"extract data from site\", \"crawl pages\", \"webscraper\", \"sitemap JSON\", or any request involving collecting structured information from one or more web pages. The output is a JSON file the user imports into the WebScraper.io Chrome/Chromium extension (they handle the import themselves).",
+  "contextFileName": "GEMINI.md"
+}

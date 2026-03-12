@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://webscraper.io/sitemap.schema.json",
+  "title": "WebScraper.io Sitemap",
+  "description": "Schema for WebScraper.io Chrome extension sitemap export format (v1.107.22). Generated from deobfuscated devtools_panel.js source.",
+  "type": "object",
+  "required": ["_id", "startUrl"],
+  "additionalProperties": false,
+  "properties": {
+    "_id": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9_\\(\\)\\+\\-]+$",
+      "description": "Unique sitemap identifier. Only letters, digits, _, (, ), +, - allowed."
+    },
+    "startUrl": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^https?://"
+      },
+      "minItems": 1,
+      "maxItems": 10000,
+      "description": "Start URLs, optionally with [N-M(:step)] range notation."
+    },
+    "selectors": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "oneOf": [
+          { "$ref": "#/$defs/SelectorText" },
+          { "$ref": "#/$defs/SelectorLink" },
+          { "$ref": "#/$defs/SelectorImage" },
+          { "$ref": "#/$defs/SelectorTable" },
+          { "$ref": "#/$defs/SelectorElementAttribute" },
+          { "$ref": "#/$defs/SelectorHTML" },
+          { "$ref": "#/$defs/SelectorElement" },
+          { "$ref": "#/$defs/SelectorElementScroll" },
+          { "$ref": "#/$defs/SelectorElementClick" },
+          { "$ref": "#/$defs/SelectorGroup" },
+          { "$ref": "#/$defs/SelectorSitemapXmlLink" },
+          { "$ref": "#/$defs/SelectorPagination" },
+          { "$ref": "#/$defs/SelectorScriptData" },
+          { "$ref": "#/$defs/ActionScrollDown" },
+          { "$ref": "#/$defs/ActionClick" },
+          { "$ref": "#/$defs/SelectorPopupLink" }
+        ]
+      },
+      "default": []
+    },
+    "websiteStateSetup": {
+      "description": "Optional website state setup configuration.",
+      "type": "object"
+    },
+    "hashHistory": {
+      "description": "Hash history for deduplication. Preserved by exportSitemap(), stripped by toString().",
+      "type": "array"
+    }
+  },
+  "$defs": {
+    "MultipleType": {
+      "type": "string",
+      "enum": ["singleColumn", "multipleColumns", "singleColumnWithSeparator"]
+    },
+    "LinkType": {
+      "type": "string",
+      "enum": ["linkFromHref", "linkFromInnerText", "linkFromAttributes", "linkFromInlineScript", "linkFromRedirect"]
+    },
+    "PaginationType": {
+      "type": "string",
+      "enum": ["auto", "linkFromHref", "linkFromInlineScript", "linkFromAttributes", "linkFromInnerText", "clickMore", "clickOnce", "linkFromRedirect"]
+    },
+    "ClickType": {
+      "type": "string",
+      "enum": ["clickOnce", "clickMore"]
+    },
+    "ClickElementUniquenessType": {
+      "type": "string",
+      "enum": ["uniqueText", "uniqueHTMLText", "uniqueHTML", "uniqueCSSSelector"]
+    },
+    "ClickActionType": {
+      "type": "string",
+      "enum": ["auto", "real-like-events", "real"]
+    },
+    "DiscardInitialElements": {
+      "type": "string",
+      "enum": ["do-not-discard", "discard-when-click-element-exists", "discard"]
+    },
+    "ScriptDataColumn": {
+      "type": "object",
+      "required": ["name", "is_url"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "is_url": { "type": "boolean" }
+      }
+    },
+    "TableColumn": {
+      "type": "object",
+      "required": ["header", "name", "extract"],
+      "additionalProperties": false,
+      "properties": {
+        "header": { "type": "string" },
+        "name": { "type": "string" },
+        "extract": { "type": "boolean" }
+      }
+    },
+    "SelectorText": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorText" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multipleType": { "$ref": "#/$defs/MultipleType" },
+        "regex": { "type": "string" },
+        "columnCount": { "type": "integer", "minimum": 1 },
+        "multiple": { "type": "boolean" },
+        "version": { "type": "integer" }
+      }
+    },
+    "SelectorLink": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorLink" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multiple": { "type": "boolean" },
+        "linkType": { "$ref": "#/$defs/LinkType" },
+        "version": { "type": "integer" }
+      }
+    },
+    "SelectorImage": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorImage" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multipleType": { "$ref": "#/$defs/MultipleType" },
+        "columnCount": { "type": "integer", "minimum": 1 },
+        "multiple": { "type": "boolean" },
+        "version": { "type": "integer" }
+      }
+    },
+    "SelectorTable": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorTable" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "tableHeaderRowSelector": { "type": "string" },
+        "tableDataRowSelector": { "type": "string" },
+        "multiple": { "type": "boolean" },
+        "columns": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TableColumn" }
+        }
+      }
+    },
+    "SelectorElementAttribute": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorElementAttribute" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "extractAttribute": { "type": "string" },
+        "multipleType": { "$ref": "#/$defs/MultipleType" },
+        "columnCount": { "type": "integer", "minimum": 1 },
+        "multiple": { "type": "boolean" },
+        "version": { "type": "integer" }
+      }
+    },
+    "SelectorHTML": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorHTML" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multiple": { "type": "boolean" },
+        "regex": { "type": "string" }
+      }
+    },
+    "SelectorElement": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorElement" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multiple": { "type": "boolean" },
+        "scroll": { "type": "boolean" },
+        "elementLimit": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "SelectorElementScroll": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorElementScroll" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multiple": { "type": "boolean" },
+        "elementLimit": { "type": "integer", "minimum": 0 },
+        "delay": { "type": "integer", "minimum": 0, "maximum": 60000 },
+        "scrollElementSelector": { "type": "string" }
+      }
+    },
+    "SelectorElementClick": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorElementClick" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "clickElementSelector": { "type": "string" },
+        "clickType": { "$ref": "#/$defs/ClickType" },
+        "clickElementUniquenessType": { "$ref": "#/$defs/ClickElementUniquenessType" },
+        "multiple": { "type": "boolean" },
+        "discardInitialElements": { "$ref": "#/$defs/DiscardInitialElements" },
+        "delay": { "type": "integer", "minimum": 0, "maximum": 60000 },
+        "clickActionType": { "$ref": "#/$defs/ClickActionType" }
+      }
+    },
+    "SelectorGroup": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorGroup" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "extractAttribute": { "type": "string" }
+      }
+    },
+    "SelectorSitemapXmlLink": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorSitemapXmlLink" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "sitemapXmlUrls": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "sitemapXmlUrlRegex": { "type": "string" },
+        "sitemapXmlMinimumPriority": { "type": "number", "minimum": 0, "maximum": 1 },
+        "version": { "type": "integer" }
+      }
+    },
+    "SelectorPagination": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorPagination" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "paginationType": { "$ref": "#/$defs/PaginationType" }
+      }
+    },
+    "SelectorScriptData": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorScriptData" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "script": { "type": "string" },
+        "scriptDataColumns": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ScriptDataColumn" }
+        },
+        "multiple": { "type": "boolean" },
+        "dataColumns": {
+          "description": "Listed in getFeatures() but never assigned in constructor. Included for forward compatibility.",
+          "type": "array"
+        }
+      }
+    },
+    "ActionScrollDown": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "ActionScrollDown" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selectorScrollElement": { "type": "string" },
+        "selectorScrollDownIfElementNotVisible": { "type": "string" },
+        "selectorScrollToElement": { "type": "string" },
+        "delay": { "type": "integer", "minimum": 0, "maximum": 60000 }
+      }
+    },
+    "ActionClick": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "ActionClick" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "clickElementSelector": { "type": "string" },
+        "delay": { "type": "integer", "minimum": 0, "maximum": 60000 }
+      }
+    },
+    "SelectorPopupLink": {
+      "type": "object",
+      "required": ["id", "type", "parentSelectors"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "const": "SelectorPopupLink" },
+        "parentSelectors": { "type": "array", "items": { "type": "string" } },
+        "selector": { "type": "string" },
+        "multiple": { "type": "boolean" }
+      }
+    }
+  }
+}
