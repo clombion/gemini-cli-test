@@ -1,0 +1,133 @@
+{
+  "_id": "wikipedia-countries-homicide-rate",
+  "startUrl": [
+    "https://en.wikipedia.org/wiki/List_of_countries_by_intentional_homicide_rate"
+  ],
+  "selectors": [
+    {
+      "id": "country-row",
+      "type": "SelectorElement",
+      "parentSelectors": ["_root"],
+      "selector": ".wikitable.sortable:nth-of-type(1) tbody tr:has(td)",
+      "multiple": true,
+      "scroll": false,
+      "elementLimit": 0
+    },
+    {
+      "id": "location",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(1)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "detail-link",
+      "type": "SelectorLink",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(1) a",
+      "multiple": false,
+      "linkType": "linkFromHref"
+    },
+    {
+      "id": "capital",
+      "type": "SelectorText",
+      "parentSelectors": ["detail-link"],
+      "selector": "th:contains('Capital') + td",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "official-language",
+      "type": "SelectorText",
+      "parentSelectors": ["detail-link"],
+      "selector": "th:contains('Official language') + td",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "government",
+      "type": "SelectorText",
+      "parentSelectors": ["detail-link"],
+      "selector": "th:contains('Government') + td",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "total-area",
+      "type": "SelectorText",
+      "parentSelectors": ["detail-link"],
+      "selector": "th:contains('Total') + td",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "population",
+      "type": "SelectorText",
+      "parentSelectors": ["detail-link"],
+      "selector": "th:contains('estimate') + td",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "rate",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(2)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "rate-year",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(3)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "count",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(4)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "count-year",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(5)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "region",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(6)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "subregion",
+      "type": "SelectorText",
+      "parentSelectors": ["country-row"],
+      "selector": "td:nth-child(7)",
+      "multipleType": "singleColumn",
+      "multiple": false,
+      "regex": ""
+    }
+  ]
+}
