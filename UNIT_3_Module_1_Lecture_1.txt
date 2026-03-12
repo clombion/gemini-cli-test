@@ -1,0 +1,4524 @@
+00:07
+Well, welcome everybody.
+
+00:09
+Um we are uh moving ahead
+
+00:12
+in the program uh and the spring is approaching um this indicates that we are already at the third unit
+
+00:21
+Um so um uh we move now uh from these two very broad kind of uh units, one on introduction of
+
+00:32
+Development and ICT and the other one on social design.
+
+00:36
+We move now to something more specific
+
+00:39
+And we are looking at data.
+
+00:42
+We are looking particularly with this module that we will launch today.
+
+00:47
+We will kick off today with Cedric.
+
+00:50
+on ICT for civic data.
+
+00:52
+So this model has been I mean going on since the beginning of this program but every year it's changed.
+
+00:58
+I mean last year it was ICT for data collection.
+
+01:01
+This year we have reworked it out and it's
+
+01:03
+already titled ICT for civic data.
+
+01:06
+And I know for example Cedric has also integrated some of his um
+
+01:13
+let's say learnings uh over this year, uh particularly with the introduction of uh generative AI and LLMs.
+
+01:21
+uh ways how maybe uh LLMs or AI uh systems can help uh in the whole uh data lifecycle
+
+01:30
+And the second module you will be working with Stuart.
+
+01:35
+He is currently engaged with International Migration Organization here in Italy, in Rome.
+
+01:43
+uh previously colleague of mine with UNICEF um and he will also look data, humanitarian data, humanitarian emergency situations
+
+01:53
+So he will bring another perspective where he worked mostly in emergency and humanitarian situations.
+
+02:02
+We will have a workshop, also a very practical workshop during that model with a guest speaker from Signal Program of Harvard University.
+
+02:14
+um practically looking particularly looking at the at the geospatial mapping.
+
+02:23
+So that's that's going to be uh something.
+
+02:27
+I see Ernest shared a whiteboard with me.
+
+02:30
+I don't know.
+
+02:31
+Okay.
+
+02:33
+I don't know what does this mean.
+
+02:34
+It told us by mistake
+
+02:36
+Okay, nice.
+
+02:39
+So um I'm very happy to have Cedric with us also this year
+
+02:44
+Cedric is also working in shaping the program for the crash course, number one, which will take place in April.
+
+02:54
+You already have this date since last year already, and it's going to take place after the spring break.
+
+03:00
+So we'll have that week to breathe a bit, digest a bit, the work, catch up with other stuff
+
+03:06
+And then if you can, you come to Turin.
+
+03:08
+If not, we welcome you online.
+
+03:12
+But I wanted also to mention that this Friday you will have the second exam
+
+03:18
+uh which is uh the is complete um all the materials slides video recordings are uploaded in the core club
+
+03:31
+And also I recall if you can fill in from that is very helpful not only in um
+
+03:40
+Supporting us a bit with how you see this program going, but also trying to calibrate the upcoming uh units, models, and other elements of the program.
+
+03:50
+So
+
+03:53
+That's it for me.
+
+03:55
+I don't have anything else.
+
+03:57
+I'm just checking if there are any questions for me.
+
+04:13
+Very good.
+
+04:14
+Cedric, I will pass it over to you and thanks again for joining this year as well.
+
+04:27
+Thank you all, Ron, for the introduction.
+
+04:29
+Um so hello everyone, I'm Cedric.
+
+04:32
+I
+
+04:34
+Um well I have uh a background that is um
+
+04:43
+I wouldn't say atypical for the kind of people that we are, but I've I've I grew up in a French island in the Caribbean called Guadeloupe.
+
+04:53
+I um lived for 15 years in the southwest of France in Bordeaux.
+
+04:59
+And now I currently live in Norway.
+
+05:03
+in the second city of Norway called Bergen.
+
+05:06
+Um I have been working
+
+05:12
+In the field, I think this is officially my tenth year working in um international development and specifically transparency and accountability.
+
+05:24
+um well mainly and I spent quite a many years working um
+
+05:33
+With an organization that some of you may have heard of that is called the Open Knowledge Foundation.
+
+05:40
+Um, so at the Open Knowledge Foundation, I um had many roles, um, but
+
+05:47
+Um in my later years there I was responsible for most of the data-centric work, which was um focused on teaching, on doing trainings with
+
+06:00
+um civic organizations with governments um and um and now three years ago
+
+06:10
+I started my own nonprofit organization that is called Civic Literacy Initiative.
+
+06:18
+Um we've a former colleague, uh well, he's now a co-founder, but we were a former colleague in the Open Knowledge Foundation who is based in the Philippines.
+
+06:30
+And our aim was to essentially take the insights we got from working with so many organizations.
+
+06:41
+around the world, so many trainers on so many data projects across anything from um the oil gas mining transport
+
+06:50
+transparency projects to corruption project with transparency international to um indigenous rights projects in Indonesia to uh women's rights projects in South America we really um managed to
+
+07:04
+um interact with a lot of people, brilliant people, amazing people.
+
+07:10
+And a lot of the challenges that we saw were that
+
+07:14
+we did not have the resource or the right approaches to be able to give all those people the tools
+
+07:24
+that they need to be able to um use data for their own purposes.
+
+07:31
+Because at the end of the day, data is there to serve us.
+
+07:34
+right with the the point of this class and the point of everything I've I've done before and I teach beside
+
+07:42
+um the University of Turin.
+
+07:44
+I also teach um to journalism students at the University of Bordeaux on data journalism.
+
+07:50
+All of it is
+
+07:51
+Never about data for itself, but data as a support for whatever projects and activities we have in mind
+
+07:59
+And this is really what I will try to emphasize with you to not get stuck into the technicality, into the tooling.
+
+08:09
+It's important.
+
+08:10
+but to never lose track of what is it that we're trying to do.
+
+08:14
+Even more in the age of AI and generative AI, this is essential to keep an eye on where we're going.
+
+08:24
+So that's that's the brief uh introduction about myself.
+
+08:30
+Um if you don't mind, um could you um
+
+08:37
+Introduce yourself briefly as well so I can start to get to know you and then we'll move on to a little quiz or poll, a mix of poll and a quiz.
+
+08:49
+So who wants to start?
+
+09:00
+Yes, Carolina.
+
+09:03
+Okay, I can go first.
+
+09:05
+Hello, my name is Carolina and I'm based in Torino and I'm from Torino.
+
+09:11
+And uh I graduated in international studies and I work in ICT in a foundation here in Torino that uh does
+
+09:20
+grants and tenders and digitalization projects for uh startups and uh SMEs.
+
+09:27
+And uh that's it
+
+09:31
+Nice to meet you.
+
+09:32
+Nice to meet you.
+
+09:34
+Who's next?
+
+09:43
+Hi everyone, I'm Medis, Minister K from Istanbul, Turkey.
+
+09:47
+I'm just a governance expert working at international organizations.
+
+09:52
+and mainly focusing on uh anti-corruption participation and principles of the governance.
+
+10:01
+Thank you
+
+10:03
+Nice, thank you.
+
+10:05
+There was uh after you Priscilla.
+
+10:10
+Uh hello
+
+10:11
+I am Priscilla and I live in Novara, Italy.
+
+10:16
+And I graduated in international studies at the University of Turin.
+
+10:21
+And currently I'm during my year of the Universal Civil Service with an NGO based in another province of
+
+10:33
+of Piemonte which is Cunha.
+
+10:37
+Thank you.
+
+10:40
+Excellent.
+
+10:41
+Who's next?
+
+10:42
+Yes.
+
+10:44
+Julia.
+
+10:46
+Hi.
+
+10:49
+I'm based in Turin where I work for a foundation and I work as a grantwriter and project manager in the social inclusion field.
+
+11:02
+Excellent.
+
+11:06
+Who's next?
+
+11:11
+Uh I can go next.
+
+11:13
+Yes.
+
+11:14
+I'm Richard.
+
+11:15
+Um French, although I don't live here
+
+11:18
+I don't live there any longer.
+
+11:19
+I did study in Bordeaux as well.
+
+11:22
+Consultant in European projects, grant writer and project evaluator, mostly working in the Erasmus program.
+
+11:31
+related to education and and culture mostly.
+
+11:39
+Nice, thank you.
+
+11:40
+Chris.
+
+11:43
+Hi everyone.
+
+11:46
+Yes, nice to to meet you and start this unit.
+
+11:50
+And uh my name is Chris.
+
+11:51
+I'm American originally, but
+
+11:54
+been living and working in sub-Saharan Africa for the past 10, 11 years.
+
+12:00
+Um West Africa, uh I was based in Ghana.
+
+12:05
+Um
+
+12:06
+for about five years and also had uh about three years, three plus years working in Kenya and East Africa.
+
+12:15
+Um
+
+12:16
+And I've been working mostly focused on financial sector digital transformation in the microfinance and small scale finance.
+
+12:29
+sectors, uh MSME finance.
+
+12:32
+Um and I in recent years I've also started to be doing more and more um with
+
+12:38
+uh artificial intelligence uh deployments through um a UN agency called ITU based out of Geneva.
+
+12:46
+That is the UN's ICT agency.
+
+12:50
+Um, and yeah, that's me.
+
+12:52
+It's a pleasure to meet you.
+
+12:55
+Nice.
+
+12:56
+Great profile.
+
+12:58
+Eddie?
+
+13:02
+Sorry.
+
+13:13
+And I'm currently working for for in for conservation.
+
+13:18
+Even right now I'm in a reserve in the office.
+
+13:23
+So we work in a work in a conservation area.
+
+13:26
+We call it OKP.
+
+13:27
+where we have uh Okapi is one of the largest uh uh places where we can find all Okapis and um I've been working uh in uh IT and uh data as well as communication so thank you
+
+13:42
+Nice.
+
+13:43
+In the DRC.
+
+13:44
+I didn't know DRC.
+
+13:46
+With WCS.
+
+13:49
+Excellent.
+
+13:51
+Who's next?
+
+13:52
+Raz Yar?
+
+13:55
+Yes, hi.
+
+13:56
+My name is Reshar and I'm based in Armenia, in Italy.
+
+14:01
+My background is human rights civil society education.
+
+14:05
+And briefly on entrepreneurship and I ct development.
+
+14:13
+Great.
+
+14:14
+Who I haven't heard of yet?
+
+14:18
+Me, because I think that my connection dropped at some point.
+
+14:22
+Okay, Emma.
+
+14:24
+I don't know.
+
+14:25
+Okay
+
+14:25
+Uh hi, my name is Emma.
+
+14:27
+I'm currently based in Lampedusa, which is southern Sicily basically.
+
+14:32
+And my background is in international
+
+14:36
+cooperation and uh mostly with a focus on migration and human rights basically excellent
+
+14:48
+Okay, can I go next?
+
+14:50
+Hello.
+
+14:51
+My name is Dubem Bumen Sebu, based in Abuja, Nigeria.
+
+14:56
+I work with uh World Food Program as an IT officer.
+
+15:02
+My job role is quite broad, yeah.
+
+15:05
+So it's largely basically supervising and maintaining our IT infrastructure here.
+
+15:11
+And then handling a few other tasks within my area of POV and expertise.
+
+15:18
+I was an electronics engineer before I switched to IT.
+
+15:21
+So I supervise our solar energy projects.
+
+15:24
+We have a couple of them going on across Nigeria, which I supervise.
+
+15:29
+I also do a couple of other projects, hands-on, telephony projects
+
+15:33
+um a bit of data analysis for the telephony project, you know, analyzing the data and so on.
+
+15:41
+And then supervising the
+
+16:02
+Okay, we lost you, Jubem.
+
+16:05
+Uh, who was raising their hand as well?
+
+16:07
+I saw Console.
+
+16:11
+Yes, um yeah my name is Konsole and um I'm in Ronda.
+
+16:18
+I'm currently uh working in a construction company as the operations manager of
+
+16:24
+Day-day activities.
+
+16:27
+Yeah, good to meet you.
+
+16:30
+Nice.
+
+16:31
+Who I haven't heard of yet?
+
+16:34
+Sunil.
+
+16:36
+Yep.
+
+16:36
+Hello Cedric.
+
+16:37
+Hello everyone.
+
+16:38
+So I'm Sunil and I'm based in Chennai, India.
+
+16:43
+I did my master's in data science from University of Edinburgh.
+
+16:47
+a few years ago and currently freelancing now.
+
+16:52
+Excellent.
+
+16:53
+Um m Mudidik
+
+16:58
+Okay, thank you.
+
+16:59
+Hello everyone.
+
+17:02
+I am Mu, uh currently I'm based in Indonesia
+
+17:07
+uh exactly in Bangai uh city.
+
+17:10
+Uh at the moment I'm working uh in research and innovation agency and development in the local area.
+
+17:18
+Thanks
+
+17:20
+Excellent.
+
+17:22
+Um, who else
+
+17:28
+I raised my hand.
+
+17:30
+Yes.
+
+17:31
+Hello.
+
+17:32
+My name is Chiara.
+
+17:34
+I live near Turin in a small city.
+
+17:37
+and I just graduated in international relations here in Turin, but also I have a double degree in at Sciences Po Bordeaux.
+
+17:50
+And uh well I would like to like I'm I have no job for the moment uh but I would like to work in the cooperation field and uh I'm very interested in ICT too.
+
+18:03
+Thank you.
+
+18:05
+Well we are uh we are from the same uh school then.
+
+18:12
+Um Ernest?
+
+18:16
+Hello everyone.
+
+18:18
+I'm Ernest Nihanswa.
+
+18:22
+I'm Rwandan and I live in Rwanda.
+
+18:25
+Currently I'm working for
+
+18:28
+uh expertise funds and uh project that is establishing uh TV centers of excellence.
+
+18:37
+So my position is a TVT expert.
+
+18:40
+So we are in education.
+
+18:42
+Thank you.
+
+18:44
+Nice, excellent.
+
+18:46
+Um have we heard of Samuel?
+
+18:53
+Benedicta?
+
+18:54
+Hi everyone.
+
+18:56
+Samuel, yes.
+
+18:58
+My name is Samuel Jeky.
+
+19:00
+I'm based in Abidjan, Iowa Coast.
+
+19:03
+Charlie and work in the company and the feelings.
+
+19:10
+Nice to meet you.
+
+19:14
+Nice.
+
+19:15
+And Benedicta?
+
+19:18
+Hello everyone.
+
+19:19
+I am Benedicta Onikeri.
+
+19:22
+I'm based, I'm in Nigeria, I'm based in Lagos State.
+
+19:26
+Um, I have a master's in public and international affairs and um I'm I work in the educational sector.
+
+19:34
+I just came back from volunteering in Liberia recently.
+
+19:38
+Okay
+
+19:41
+Nice.
+
+19:41
+I love the diversity of profiles we have.
+
+19:46
+Anyone that hasn't, I think we've been through everyone.
+
+19:50
+I haven't talked yet.
+
+19:52
+Ah, Alice.
+
+19:53
+Yes.
+
+19:53
+Hi, I'm Alice.
+
+19:55
+I recently graduated in international communication in Turin, where I am at the moment.
+
+20:01
+I'm in Turin, but soon I moved to Munich.
+
+20:04
+close to Munich to work in a family business in an ice cream shop.
+
+20:08
+So I'm more amazing.
+
+20:14
+Um I I haven't
+
+20:17
+present myself as well but I will take off the camera because my connection is not gonna work.
+
+20:25
+I'm Diana.
+
+20:28
+I am currently living in London, based in London, and I am from Colombia
+
+20:38
+My background is in economic inclusion and ICT for D.
+
+20:45
+But after coming to London, I
+
+20:48
+switch more into um education and climate action and related to gender.
+
+20:59
+So yeah that would be
+
+21:02
+Um my my current um consultancy work.
+
+21:11
+Excellent.
+
+21:14
+Okay, uh I think we got everyone.
+
+21:17
+Um tell me if I'm mistaken.
+
+21:20
+Um I I I love the the diversity of
+
+21:23
+profile it's very different from the the last time um I had this program and and what we're gonna re what we're gonna view today is also very different.
+
+21:35
+Um there are some of you who are
+
+21:38
+uh fairly confident already in technology and data.
+
+21:42
+But I think um I think that
+
+21:48
+My experience and the methodologies that I've built, not only through doing data work, but also teaching a lot of data work, will be helpful not only for you to
+
+22:01
+um to to sort of structure your own work, even if you are already confident uh in working with data, but also to call to coordinate and to work with others who may not have your level of confidence.
+
+22:14
+confidence and who may need more um structure in terms of how they work with you on um delivering data work.
+
+22:23
+So I think um that
+
+22:25
+what we go what we're going to see um will be useful for everyone.
+
+22:30
+And not only that, but um the
+
+22:35
+the work um and the research that I've been doing on how AI makes sense in the context of
+
+22:44
+uh data work uh I believe um would also be very helpful and I will have a lot of resources to share with you and handouts of um
+
+22:56
+resources and toolings that I've built for myself over the past year for my own work and for partners.
+
+23:06
+So
+
+23:09
+the j just as a just as a reference currently my our main client is the
+
+23:21
+Extractive Industry Transparency Initiative based in Oslo uh coordinating the transparency release of
+
+23:31
+um oil gas mining data by 50 something governments.
+
+23:36
+Um my team is the one maintaining the
+
+23:42
+uh website at soeslashdatabase dot eiti.
+
+23:47
+org uh where which is uh open data um
+
+23:51
+database um based on the company data that the EITI has collected over the years.
+
+23:59
+And I'm currently working
+
+24:02
+on the release of the V2 of that database that has um well an expended amount of data in there um and
+
+24:12
+and also more ways to interact with the data regardless of your skill level.
+
+24:17
+Besides, I just finished a project with Civicus, where we have mentored
+
+24:25
+We have selected and mentored five organizations from Eastern Europe and Central Asia, which for the most of them had came with proposals.
+
+24:37
+around data and AI.
+
+24:41
+And we we've managed to get a lot of perspective from organizations from North Macedonia, from Armenia, from Ukraine.
+
+24:51
+um from Kosovo um and from Georgia and uh and what I learned from that project is also will you also be condensed in
+
+25:02
+to what we're gonna see um today.
+
+25:05
+But I I'm preparing an article um that might be that might be written
+
+25:11
+uh before the the before the end of the month about um d that experience and uh the kind of uh illusions that some civic
+
+25:24
+uh organizations may have about what AI can do for them.
+
+25:28
+Which is not to say that I'm not positive, I'm very positive, but we'll see.
+
+25:33
+So first um I'd like to start with
+
+25:37
+A little Paul, so I will share with you in the chat a link
+
+25:51
+Which should allow you to join a CDO pollen.
+
+25:58
+I will share
+
+26:01
+my screen i as well if i manage
+
+26:16
+Um okay.
+
+26:21
+Ron, are you there?
+
+26:31
+So I may need to reconnect because of the screen sharing.
+
+26:35
+Uh so give me a second, but you should be able to join the link uh that I've shared on the chat.
+
+26:54
+Yeah, there
+
+27:30
+And I am back.
+
+27:32
+Okay.
+
+27:34
+I see only one person in the oh okay.
+
+27:39
+So you can start writing.
+
+27:41
+Okay.
+
+27:42
+Um
+
+28:05
+You should be able to see my screen as well.
+
+28:13
+Yes.
+
+28:39
+Automation future
+
+28:45
+machine learning, test automation, information, infinite possibilities, brainstorming, unemployment, disruption, automated tools, skinet, computer, weapon help.
+
+28:59
+program behaviors advanced technology destruction magic tech
+
+29:11
+automated tool.
+
+29:13
+So there's like um um maybe not the consensus but a lot of you who are thinking about ai in terms of automation and future
+
+29:25
+Some of you see as well the um the parts related to morality and destruction and employment.
+
+29:34
+uh dependency um and those are all war mimicking human behaviors those are all valid um
+
+29:46
+um aspects of um of AI, but automation is um really
+
+29:56
+uh a good keyword to center our debate on AI and um the the question then is we have to dig in what kind of automation and what does that automation
+
+30:10
+looks like.
+
+30:12
+So let's let's put AI to the side for a moment, for a quick moment.
+
+30:23
+And
+
+30:24
+I'm asking you a question.
+
+30:26
+Um in your experience, regardless of it it's uh during your studies or your long experience doing
+
+30:36
+um economics consulting at work or anything.
+
+30:40
+What do you think is the biggest challenge?
+
+30:44
+What is in your experience the biggest challenge when it comes to doing data work?
+
+31:37
+Okay, I think we've almost all responded now.
+
+31:43
+Checking data quality and defining what needs collecting and collecting the data.
+
+31:51
+Can someone share their experience with the challenges with regard to checking data quality
+
+31:56
+Who wants to share?
+
+32:07
+Melissa, yeah.
+
+32:12
+Yeah, actually and three years ago I had uh
+
+32:16
+project localizing the SDGs regional uh in the regional base regional level and I just compared the Turkey with other European countries
+
+32:28
+It was really tough to find the uh the standard size data.
+
+32:34
+When when I checked the OECD and EU-based uh database centers, okay, I can find it
+
+32:42
+But when I check the national data centers, it's really tough to compare the data because they have different kinds of definitions.
+
+32:53
+and it's not easy to compare it and standardization of data and also just the different differences of the definition also it's getting tough to compare of it
+
+33:09
+This is one of my experiences.
+
+33:15
+Anyone else has a different experience?
+
+33:21
+Yes, I was uh collaborating with uh an organization called Korea Village.
+
+33:28
+They're building an AI tool for job seekers and what I learned I think the biggest problem is data bias when it comes to
+
+33:38
+data quality, especially in the context of AI and etc.
+
+33:44
+The discrimination is unreal
+
+33:48
+um it's basically designed in a way that performs for the benefit of I don't really like to think like this but that's a reality to say it like this but
+
+34:01
+of people who are white and etc etc so there are a lot of problems with that in general
+
+34:11
+That is a very good point.
+
+34:13
+So essentially there's a compounding challenge between the
+
+34:20
+Existing challenges with regard to checking data quality and now adding uh generative AI on top, which adds bias.
+
+34:33
+Not just in the data itself, but in how the data can be processed, depending on how we use them.
+
+34:41
+Who has something to share about defining what needs collecting
+
+34:46
+I like I like that answer.
+
+34:50
+Um I think uh and that's
+
+34:55
+I have to share my experience.
+
+34:57
+We are working with the government partners in a partnership for managing all the protected areas.
+
+35:06
+And when it's come to define the what needs to be collected, it's all sometimes it creates confusion because the type of information we are collecting
+
+35:18
+for the donors, for the buyers, for the donors, it's sometimes contradictory to the local government or the national government.
+
+35:28
+And sometimes it creates some confusion.
+
+35:31
+When it comes to at certain level, you may collect what we think is the right information for X and Y donor.
+
+35:41
+But when you go to the government site, since we are in a partnership, so we have to give report to them.
+
+35:48
+So it's create some confusion.
+
+35:52
+What we believe is the data set or the data, whatever they've um the donors they've created as a data quality check or what should be collected is totally different for the government side
+
+36:05
+And most of the time it creates that confusion.
+
+36:07
+Up to now there's no like uh um uh also the I mean there's no policy or whatever which regulates which type of we may use the same tool
+
+36:19
+to collect information, but we data would the information collected will be uh interpreted and will be used in different ways and sometimes contradictory.
+
+36:30
+That's what we have seen so far working in this field of conservation.
+
+36:38
+That's a great insight.
+
+36:40
+Um anyone else?
+
+36:43
+If I can add something, um uh we work with SMEs and uh small enterprises and what I always find is that
+
+36:52
+um they collect data without intention.
+
+36:56
+So they collect it for collecting it.
+
+36:59
+And then at some point
+
+37:01
+They they want to do something specific, but they didn't collect the data that is needed to do that specific thing, like abilitate uh AI-based solution
+
+37:13
+So only collecting it, not specifically, is not enough.
+
+37:17
+They collect everything and they collect everything badly.
+
+37:22
+That's a good point.
+
+37:23
+Chris, do you have something to share?
+
+37:25
+You seem to have uh quite a long experience consulting around data.
+
+37:36
+I I think uh the last point there I will agree with as well.
+
+37:43
+I mean I I've seen I guess both sides of it, right?
+
+37:46
+So I've
+
+37:49
+I guess I've seen data be seen as this as something that needs to be reported for compliance purposes.
+
+38:00
+Right.
+
+38:00
+And it's uh um I I think better organizations, they're they're more strategic around data, right?
+
+38:09
+And Carolina, I think you use the word intentional, but um or having intent or
+
+38:14
+you know, really have um data be harnessed to enable a strategy rather than just being something to tick a box for reporting or to be compliant.
+
+38:26
+Yeah, as for me, yeah, I've I've seen that in a you know in some of these multilateral partnerships on the donor or funder side
+
+38:38
+You know, where they're really architecting it a data strategy, but in a way that's making us seem like something where participants need to be compliant and need to report.
+
+38:49
+And it's more
+
+38:50
+um reactive in that way to to comply to requirements of a project.
+
+38:57
+But at the same time, you know, I I also am a co-founder of a an inclusive fintech startup and
+
+39:04
+You know, we've seen ways in which it's just critical that we figure out the right type of data to collect and have have
+
+39:16
+ways to to harness it and then put it to action in meaningful ways.
+
+39:20
+It's really among the most powerful things that can prove out a business model or provide ways to show impact and show that your your
+
+39:30
+theory of change is being realized into actual outcomes and things like that.
+
+39:34
+So I think it's a, yeah, there's varying degrees of mindset approaches to data and to being
+
+39:42
+good at it and and having it be very useful.
+
+39:48
+Excellent.
+
+39:49
+Thank you.
+
+39:51
+Just a quick vocabulary check.
+
+39:56
+That's the next slide.
+
+39:59
+What's the answer?
+
+40:33
+Okay.
+
+40:35
+We're almost there with everyone responding.
+
+40:49
+Okay.
+
+40:50
+So um
+
+40:56
+It it is uh oops, what happened
+
+41:22
+I'm not sure why I lost my question, but
+
+41:28
+This is uh the answer was large language model.
+
+41:32
+Um the
+
+41:37
+The term is one of the terms used to describe the models that are behind what we also call generative AI.
+
+41:50
+large language model is used because essentially those this this new breakthrough, this new generation of AI tools and models.
+
+42:01
+um has been trained on massive amounts of text.
+
+42:07
+So we're talking about the world internet, we we're talking about um uh millions of books
+
+42:15
+Uh we're talking about millions of research papers.
+
+42:19
+So they've been trained on all those um all those texts.
+
+42:23
+And what what happened thanks to a research paper that has that has come out of Google in 2016?
+
+42:32
+Um so it's actually the the research breakthrough was quite a while ago, but uh we're getting to
+
+42:40
+Reap the benefits uh only now.
+
+42:43
+Um what happened is that they discovered that if you trained
+
+42:49
+uh a model an AI model a certain way using the um
+
+42:57
+uh a technology uh an algorithm called the attention mechanism uh basically the ai is going to predict to try to predict the next word
+
+43:07
+It's uh the exact word is the token, but the AI is trying to predict the next word.
+
+43:11
+And because the AI has so much text
+
+43:15
+in its corpus, in its database, essentially, it has the ability to predict that um
+
+43:24
+There will be followed by maybe car.
+
+43:28
+But if the request was about the sky, then maybe there will be followed by plane.
+
+43:35
+And every time the AI says a word, essentially, it calculates the probability of what is the most um what is the most um
+
+43:46
+reasonable world word that should follow the word that it just wrote.
+
+43:51
+And it does that based on
+
+43:54
+the statistics of how we write on internet, how words are written on um on uh
+
+44:03
+uh in books, in research papers.
+
+44:07
+So when uh you start uh talking to an AI and you say something about
+
+44:14
+uh civic data, then the AI will think about will sort of navigate the space of if you imagine a cloud of words.
+
+44:25
+inside the the model.
+
+44:27
+It will go to the part of the cloud that has anything like the United Nations, that has anything around corruption, around poverty, around uh conservation.
+
+44:39
+uh about all those concepts that are linked to civic and then linked to data it will go to algorithm it will go
+
+44:49
+to computers, etc.
+
+44:51
+So uh you can imagine the the AI model as this kind of like um robots
+
+44:59
+uh if you could say navigating in a cloud of words and every time you send a word to the ai it will say oh that word like seems related to that part of the cloud so I'm we'll go there
+
+45:12
+And that word seems related to that part of the cloud that will go there.
+
+45:16
+And um today most of the
+
+45:20
+um generative AI tools, the LLMs that we you have access to.
+
+45:26
+Whether it's Chat GPT, whether it's um
+
+45:30
+Gemini or Cloud or the open source versions, um, it's important to understand that they're not a single model.
+
+45:40
+actually because there's uh actually a single model is very limited in what it can do it what it can do.
+
+45:46
+So generally it's what's it called a a mix of experts
+
+45:50
+And the way they do that is that they have a small model that has less broader broader knowledge, won't be able to talk about quantum mechanics or the new advancing medicines.
+
+46:04
+But it's very much trained in interpreting your your sentence to say, what are you trying to say?
+
+46:12
+Once that small model has interpreted your sentence, it will pick a larger model by saying, hey, this is what the user is trying to say.
+
+46:24
+So
+
+46:24
+Please find in your word cloud the right area and respond to them.
+
+46:30
+So some of them will be more specialized in
+
+46:34
+breaking down your say your project idea into task.
+
+46:39
+So that's mixture of experts is a technique used.
+
+46:43
+To essentially not try to have one massive AI do everything because it doesn't work, and it doesn't work because the AI gets confused
+
+46:54
+Because the more you say talk about medicine with DAI, if suddenly you shift topic to something very different, then it struggles to find the connection.
+
+47:06
+And a human, if you talk to a human, they will understand that, oh, it's like no transition, you changing topic.
+
+47:13
+Okay, what do you want to say about um
+
+47:17
+uh protection.
+
+47:19
+Um but uh the AI will often get confused and we'll try to start mixing medicine concepts with uh
+
+47:28
+with uh forestry or animal protection, uh etc.
+
+47:33
+So mixture of experts help this
+
+47:36
+um what we call routing, meaning directing the uh the AI, the the big AI model toward toward the right.
+
+47:46
+place in the cloud in order for them to understand uh to have the most insightful response.
+
+47:53
+So that's that's what has helped the AI responses
+
+47:59
+become much more accurate and interesting very quickly over the past two years.
+
+48:04
+This is what has helped with reducing the amount of hallucinations
+
+48:10
+Uh the hallucinations, um um so
+
+48:19
+Uh when you talk about when you talk with people who work on those models and on this technology, um what's interesting is that they will tell you that
+
+48:30
+Uh the hallucination is not an anomaly in how AI works, in our generative AI works.
+
+48:38
+It's the default mode in the sense that
+
+48:42
+They are simply trying to find the next reasonable world and instead of necessarily trying to fully understand what you're trying to do, because
+
+48:55
+It's still a debated area, but at the very least, they do not have a stable uh what we call world model.
+
+49:02
+They do not have a consistent sense of space, of
+
+49:07
+um what's reasonable of who you are of even when they are able to uh for example play chess with you after a few turns they will start doing illegal moves not because
+
+49:21
+Um they're they do not know chess steps.
+
+49:28
+It's just that because they when you simply try to find the next
+
+49:34
+um the next plausible uh options in a series of words or of chess moves
+
+49:42
+uh without necessarily understanding what chess is about and the f the eventual goal of you know winning against someone and
+
+49:51
+trying a different strategy, etc.
+
+49:53
+, then it's the same as if you're watching by um you're walking by watching the road on your feet.
+
+50:00
+At some point you will bump somewhere or deviate because you're not looking at where you're going.
+
+50:06
+You don't have this model of, oh, this is a road, and next to me there's a mountain, and I know that I need to go left, etc.
+
+50:14
+So if um some of you have um well let's let's uh let's um take a little break here and I'm going to ask a question.
+
+50:27
+Um does has anyone worked with what we call AI agents?
+
+50:37
+Yes.
+
+50:38
+Could you explain
+
+50:46
+Could you explain with your colleagues in your words uh how would you define AI agents?
+
+50:57
+I didn't catch who responded first.
+
+51:04
+So
+
+51:07
+Wow, I actually AI agents are I mean it depends but how I describe it is that they design to perform
+
+51:20
+Tasks that you want to give them and it depends what kind of tasks is that, and then there's also subagents and etc.
+
+51:29
+But I could have an AI agent to basically
+
+51:33
+order pizzas for me or do what or uh respond to my emails or take care of all these tasks
+
+51:42
+that I wanted to take care of, which is quite scary.
+
+51:47
+It can basically I could tell the agent to
+
+51:50
+Order a pizza for me, it serves, buys the pizza using your credit card, and then it arrives at your house, etc.
+
+51:58
+But um I don't know in technical terms how to describe it
+
+52:04
+No, that's that's that's already a very good start.
+
+52:06
+Anyone wants to add something?
+
+52:11
+Or I never created an agent myself, but I worked with some agents created by the other colleagues and um
+
+52:19
+It seems like they're trained on much smaller data sets but more specific, so that they are very good at doing just
+
+52:27
+one thing or a couple of things or a very narrow area of things so that they're specialized right so
+
+52:36
+There's when we talk about AI agents, we talk about autonomy and we talk about specialization.
+
+52:44
+So
+
+52:45
+There are two contexts in which and the those two were uh mentioned um in which we talking about not AI chatbots.
+
+52:55
+But AI agents.
+
+52:56
+Okay, so AI chatbots is I go on ChatGPT web and I talk to ChatGPT about uh can you help me with this excess?
+
+53:04
+Even when I talk on the web, I'm not talking to a single model who is talking to me like a human would.
+
+53:12
+Actually, there's like a lot of like
+
+53:15
+um engineering that OpenAI or Google or Anthropic are doing to analyze your
+
+53:24
+uh query or your question do things that we call query expansion where they will try to rewrite what you said in a way that is
+
+53:33
+clearer and that tries to identify your intent and put the right keywords so that another AI can respond to you.
+
+53:42
+May there will be another, then there will be another uh AI model that will check the response before responding to you, etc.
+
+53:50
+And for example,
+
+53:52
+If you have used uh those uh chatbots recently, uh most of them now have a functionality called thinking.
+
+54:03
+Right, everybody see what I'm talking about.
+
+54:06
+Uh compared to the early a uh early stage AI where
+
+54:11
+You talk and they respond to you right away.
+
+54:14
+Now a lot of them have uh what you know the AI uh service providers call thinking.
+
+54:22
+What is thinking?
+
+54:24
+thinking is actually the AI talking to itself.
+
+54:27
+So essentially the AI is having a monologue to try to uh
+
+54:34
+um lead itself toward the right answers because and it's a form of what I would call query expansion.
+
+54:43
+So query expansion will is, if I say, for example, okay, um
+
+54:54
+Tell me um tell me how I can pick an orange.
+
+55:02
+So query expansion will take this sentence and the goal is to give the AI as much context as possible.
+
+55:12
+So it will, there will be a specialized AI model that will say, okay, there is the word peak and there is the word orange.
+
+55:20
+So it's probably not orange juice, it's probably orange the fruit
+
+55:23
+So if it's peaking, it's related to a tree.
+
+55:27
+Um, and then the user is saying tell me, so it's asking for a tutorial.
+
+55:32
+So there's this world dialogue that is happening um to be able to expand your query to becomes um
+
+55:41
+Uh give me a tutorial on how I could go out to and go to a orange tree and pick a fruit.
+
+55:51
+etc um so that's that's what crazy aspension is so thinking is like the the
+
+55:59
+Curry expansion to the maximum where not only it will just it will translate your five words into 50 words.
+
+56:07
+But it will uh continue talking to itself to try to see.
+
+56:12
+Oh, uh if we're talking about the tree, what kind of um what kind of species of tree are we talking about?
+
+56:18
+I know that the user is in
+
+56:22
+um um is around the Great Lake Area in eastern uh Africa.
+
+56:28
+Uh I know that uh they have mentioned this in before
+
+56:32
+etc etc and then maybe they will go uh toward a place where um that the ai creator do not want to uh
+
+56:43
+uh AI models to go and so it will there will be a block saying another agent saying no this is not about this topic please go back to the tree and uh picking fruits etc
+
+56:54
+etc.
+
+56:54
+So the the thinking is just the AI talking to itself.
+
+56:58
+So it's all it's really important to understand that uh someone mentioned magic.
+
+57:03
+There is there is a a
+
+57:06
+uh something that is close that feels close to magic um in the technology but essentially it's you can imagine someone trying to guess okay what should be their next
+
+57:17
+thing to say after this and what should be the next thing to say after this.
+
+57:21
+And they use that based on, oh, they're talking about orange, but I have in my memory some
+
+57:29
+um some uh some books about horticulture, about uh caring for trees, and I have uh in my memory things about
+
+57:40
+Um okay, the benefits of orange juice, etc.
+
+57:43
+So at the end, they will have a little question.
+
+57:46
+Do you want me to tell you about the benefits from eating uh an orange fruit instead of pressing it?
+
+57:54
+into a juice.
+
+57:55
+So that's um that's how they work.
+
+57:59
+It's called the attention model and it's about predicting what we call the next token, but when you what you can think about in terms of the next word.
+
+58:08
+Um is there do you have a question?
+
+58:11
+So um a question.
+
+58:12
+So does it have to rely on a pred is there should be a prediction is it a prediction model if
+
+58:19
+I may say that.
+
+58:20
+It it is a sort of prediction model, yes.
+
+58:22
+Yeah, it's based on uh information which has been given.
+
+58:27
+Then uh it's just start querying and see which is relevant to all.
+
+58:32
+the whatever information you are looking for.
+
+58:34
+Yeah.
+
+58:36
+Exactly.
+
+58:37
+And it will be you see it as well because they are very, very good at
+
+58:44
+Any topic that is talked a lot about in books or internet.
+
+58:48
+But any time that you talk about something that is more niche, that is less talked about, then they will start not
+
+58:57
+Telling they will start obviously hallucinating.
+
+59:01
+And it's not so much that they're doing something different, it's that they're still trying to guess
+
+59:05
+but they have very little in that part of the cloud to get to take from for for guessing the next step.
+
+59:12
+So they will keep trying to guess.
+
+59:14
+And they will end up saying things that they have not uh, well, that are false.
+
+59:22
+I wouldn't even say that they are verified because it
+
+59:25
+There are tools now that allow the AI to go find um information on the internet, but it's not so much of a verification that it's like, okay, let me add more things to the cloud to see if I can.
+
+59:40
+Fill more words in that area so that I can have a better prediction of what uh needs to be responded to the query.
+
+59:52
+Um Razier, did you have a question?
+
+59:56
+I do have a question, but I just want to say using the thinking models, I think that's where the most hallucination happens.
+
+01:00:04
+It's quite strange.
+
+01:00:05
+I've tried it with different models, but uh there was a lot of but my fear of AI is uh the power of decision making
+
+01:00:12
+when it comes to agents where basically decisions are handed over to that.
+
+01:00:17
+But my question is, I read a report two days ago.
+
+01:00:21
+Claude Anthropic said that they have noticed their system is experiencing or showing symptoms of anxiety.
+
+01:00:33
+which means that their model is gaining consciousness.
+
+01:00:38
+So can you explain what that means?
+
+01:00:43
+So um this is this is again so when I when we say this are prediction models these are very complex predictions
+
+01:00:52
+Models, right?
+
+01:00:53
+So uh the cloud is a gigantic cloud with a lot, a lot, with billions and trillions of words and concepts spread all over.
+
+01:01:03
+So um that means that
+
+01:01:06
+When the AI tries to predict, again, it's like walking on walking toward a direction but looking only at your feet while you're walking.
+
+01:01:16
+You may end up suddenly you are like in the middle of a forest when you were trying to stay on the road, for example
+
+01:01:23
+And that's a bit what's happening when DAI starts to um go in strange places and talk about depression and talk about those things.
+
+01:01:34
+It's not so much that
+
+01:01:36
+it feels the depression but rather that at some point it went off route it went to the part of the cloud that is maybe really with more books related
+
+01:01:47
+depression maybe with more you know they have fantasy books they have uh clinical studies related to depression and then suddenly it makes sense to continue in that area because like the next
+
+01:02:00
+the past 10 words that were about uh that they were that they mentioned were related to uh psychosis or something like this and then the next
+
+01:02:10
+10 are related to um also depression about anxiety, etc.
+
+01:02:17
+So um
+
+01:02:19
+From uh even even very early on uh when those models were not as powerful as they are now, there were a lot of uh
+
+01:02:29
+Um there are a lot of people sharing how oh the AI like remembers me, cares about me, or say that they will miss me.
+
+01:02:39
+Um but those are all guided.
+
+01:02:44
+um situations where at some point the AI encountered an input whether because from the environment like the digital environment it was navigating or from the user that
+
+01:02:57
+brought it into that specific part of the cloud.
+
+01:03:01
+So the complexity of it is, you know, there's this sentence that says any
+
+01:03:09
+Sufficiently advanced technology is no different than magic.
+
+01:03:13
+So the complexity of the tool and of the data that they use
+
+01:03:18
+And this data which uses our words, which uses the words of the novels we read, which uses the words of our scientists, etc.
+
+01:03:27
+So all those words do reflect
+
+01:03:31
+our world in a certain way, right?
+
+01:03:33
+You can learn a lot about our word just reading.
+
+01:03:35
+We all know that it's not enough to read, but you can learn a lot about our words.
+
+01:03:40
+And this complexity and those um those consistent models, when I when I when I tell you a story of a princess
+
+01:03:52
+um that is saved by prints, for example.
+
+01:03:57
+That's one story.
+
+01:03:59
+Okay, so the the in this specific story the
+
+01:04:03
+The prince came and saved the princess and they live happily ever after.
+
+01:04:06
+If I tell you a hundred stories about a princess being saved by a prince, this is a world model.
+
+01:04:12
+This is a child thinking that, okay, uh, one of the truths of the world is that princesses.
+
+01:04:22
+Get saved by princes.
+
+01:04:24
+That's the most reasonable expectation when I hear about a princess.
+
+01:04:30
+So this is the same thing.
+
+01:04:32
+that uh um a model will also do um the from word prediction it will go to concept prediction and if
+
+01:04:44
+A lot of princesses are being saved by prince in its training, then that's where it will go.
+
+01:04:51
+So if a lot of if it gets to the point of a cloud where a lot of um books that it has recorded in its training were about uh
+
+01:05:03
+clinical depression, about uh cell sentiment of pity, of anxiety, etc.
+
+01:05:10
+Then that's the most reasonable
+
+01:05:12
+path that it will take and reflect to the user.
+
+01:05:17
+So that's how this kind of um this kind of models work.
+
+01:05:22
+And you will notice as well that all those companies, OpenAI, Anthropic, uh
+
+01:05:30
+Google did it less, but they were two years ago, they were all talking about AGI, artificial general intelligence.
+
+01:05:38
+Like we were on the cusp of like this revolution where the AI will solve all our problems, climate change, everything.
+
+01:05:47
+And um in a ways is still riding on that wave.
+
+01:05:51
+But now, two years after, no one mentioned this anymore.
+
+01:05:54
+No one, none of them have had their mission to reach AGI because it has become very clear.
+
+01:06:01
+that um the the the AI that they found is not is not gonna like become this super powerful entity
+
+01:06:13
+that um that does everything and that does everything better than us, it still relies on humans guiding it.
+
+01:06:20
+It still relies on having proper knowledge in its training data and trying to reach this Skynet kind of situation with the current AI is a bit thinking that if I can use a
+
+01:06:36
+If I can use a stairwell to climb to the top of my shelf, then I can make it, I make a giant stairwell to go to the moon.
+
+01:06:47
+It just doesn't work like this.
+
+01:06:49
+So that's that's how you can think about this.
+
+01:06:54
+Oh I'm gonna Yes.
+
+01:06:58
+Yes.
+
+01:07:01
+Yeah, it's it's this question is related to the business model and the quality.
+
+01:07:08
+Um because in one side
+
+01:07:11
+as my understanding of what you are explaining is that um models get more complex and probably there are
+
+01:07:22
+a million things we we really don't know that these things can do but also the access to
+
+01:07:32
+things that are the complexity we need depend on um the access of the quality of the model we have
+
+01:07:43
+So this is another condition because it's all when when internet appeared, for example, um the condition was uh or what is improving is the how fast
+
+01:07:58
+is is the network no we have 2G 3G 4G 5G but this is different because the quality is not how fast it is but
+
+01:08:10
+how good is doing the job and this is this is the point the other condition that is creating this divide
+
+01:08:21
+And also when when you get there, you say, okay, I have three
+
+01:08:29
+uh they offer I don't know they offer three subscriptions and one can be twenty pounds and the other one can be a hundred pounds
+
+01:08:38
+and I have friends that use the hundred pounds because they work with AI all the time.
+
+01:08:44
+Um I use I use a free subscription for some things and for others and it's like it depends on that
+
+01:08:52
+to have access to this tool and from there from that scratch it's problematic.
+
+01:09:00
+It's it's
+
+01:09:02
+This this moves in between the model, the the the business and the quality.
+
+01:09:08
+So
+
+01:09:10
+Yes, so that that's a good point.
+
+01:09:12
+So there I think it it uh it's a good moment to come back to the question of AI agents.
+
+01:09:18
+So we talked about what the AI is
+
+01:09:21
+As this like general technology, very powerful technology, and what the big providers do with this mixture of models and the query expansion and all of that.
+
+01:09:37
+But AI agents, you have two types of AI agents.
+
+01:09:41
+You have the AI agents.
+
+01:09:43
+The AI agents is defined by autonomy and it's defined by agency, meaning that
+
+01:09:49
+It's able to take decisions on its own.
+
+01:09:54
+That can be very limited decision.
+
+01:09:56
+Most of the time it is very limited decision.
+
+01:09:59
+And it can act on its own
+
+01:10:02
+uh for example by creating a file by um by checking a box a digital box etc so autonomy and uh agency that's what an ai agent is
+
+01:10:16
+And to do that, they use tools.
+
+01:10:19
+Um so um what what has um
+
+01:10:25
+what the recent wave of innovation around AI has been is that um AI models are trained to be able to use search on your computer
+
+01:10:38
+They are trained to be able to use tools to, for example, filter um the
+
+01:10:48
+To download a web page or to write code or um to delete a file to create a file and those tools
+
+01:10:58
+are what allows AI to take action.
+
+01:11:02
+So we go from beyond the chatbot to something that is able to take action
+
+01:11:10
+So you will find it in two two main scenarios.
+
+01:11:14
+The first is uh automation, pure automation, and that will be, for example,
+
+01:11:21
+Um in um one of the early case studies I mentioned were people who are creating chatbots.
+
+01:11:31
+Okay, so chatbots existed since long ago.
+
+01:11:34
+Um, there were like complex techniques to try to understand what people were saying before.
+
+01:11:40
+uh because we've already had tools that somewhat understood the intent and the meaning behind text but suddenly but those tools had to be very
+
+01:11:50
+uh extensively train on specific scenarios to be efficient.
+
+01:11:53
+And suddenly AI becomes this kind of magic hammer where everything is a nail and uh you can you can very easily create new
+
+01:12:02
+uh new processes even if you did not have the previous uh knowledge about um what we call ai before machine learning models etc so in those scenarios for example
+
+01:12:15
+um you will have a travel agency that will give you a chatbot and the AI will be able to interpret your request of are there availabilities for a flight to Turin?
+
+01:12:29
+on the 6th of April.
+
+01:12:30
+What the AI will do is not that it will just give you an answer because it doesn't know fundamentally
+
+01:12:36
+But what it can do is it's able to know that, okay, if I send this information to the server of the travel company, then I will get in return all the possibilities.
+
+01:12:51
+and the prices for the 6th of April for a flight from uh Paris to Turin, for example.
+
+01:12:59
+It will be able, and this is what's very powerful, and it is what query expansion is, it will be able to say to receive your request.
+
+01:13:10
+To try to expand it into a full request about okay, they want a flight um to Turin
+
+01:13:18
+on that date they will want the prices and the locate and the the times and maybe the airport and oh there is like the um um
+
+01:13:30
+the the starting point missing so from which city they are departing from so they will uh ask you that so they are able to do that but
+
+01:13:42
+We cannot trust them to do it because sometimes they will do it, sometimes they will not.
+
+01:13:46
+So often they will uh make a request.
+
+01:13:50
+And then you have someone who has coded a system that is not AI at all, that is very deterministic, that will say to the AI.
+
+01:14:00
+Okay, you've asked me for flights to Turin, you gave me a date, you gave me uh a request to have the prices, but
+
+01:14:10
+I cannot fulfill your request unless you have uh given me uh the departure location.
+
+01:14:18
+This is the same basic system that when you are filling a form and they ask you for your name and surname and birth date.
+
+01:14:26
+And if you try to put enter without putting your birth date, then
+
+01:14:29
+it becomes red that same basic system there's no AI in it in it this is the same system that we that is used to essentially control AI an AI agent to tell it no you're not doing it right try again
+
+01:14:44
+And what's great is that they are able to, uh if they are controlled well, they are able to try until they succeed.
+
+01:14:54
+So that's how that's one type of agent.
+
+01:14:58
+The second type of agent, and this is something that we're going to
+
+01:15:02
+uh discover for those who haven't today uh yet uh and practice a little bit are agents that are running on your computer
+
+01:15:12
+So uh when um we're going to try with Gemini, um unless you have another one accessible already because you have a subscription, but uh Google offers free tokens
+
+01:15:26
+uh free credit essentially to use its AI um agent tools um a bit like a free subscription most others open ai and
+
+01:15:39
+Um with ChatGPT and uh Anshopig do not offer the free version, but Google offers uh an amount of free credits.
+
+01:15:48
+And those tools, they run on your computer.
+
+01:15:50
+And they run on your computer and they're able to do things on your computer on your behalf.
+
+01:15:55
+So if you say, please.
+
+01:15:57
+um rewrite this document to be um more optimistic then they will s read the document
+
+01:16:06
+Using a tool for reading the document, for seeing the document, and they will think about your request, expand your request.
+
+01:16:17
+Then generate the text and use a tool to write the to write in the document.
+
+01:16:23
+And then
+
+01:16:24
+In those four steps happen very quickly.
+
+01:16:27
+But then at the end of the day, at the end of that process, instead of having talked to a chatbot and says, can you give me a better write-up of this document and then you copy and then you paste?
+
+01:16:39
+No, those tools, those agentic tools allow the AI to directly edit your documents.
+
+01:16:46
+And you can see that how that can be much faster and much more convenient than going back and forth between
+
+01:16:52
+uh a chatbot but also how that can be much more dangerous right because if they can uh create an edited and edit a document they can also delete it
+
+01:17:02
+So we're going to explore over the next four courses what are the what are the possibilities?
+
+01:17:11
+How do you structure your work around those agents?
+
+01:17:15
+to um and that's my that's my philosophy and that's how generally uh today software engineers um that use ai at work work is that you want to build what we call a harness.
+
+01:17:29
+Um hardness is like um essentially the the the the the the um
+
+01:17:37
+the equipment that you use to ride a horse.
+
+01:17:39
+Like you need essentially the equipment to sit properly on the horse and to guide it, right?
+
+01:17:44
+To accelerate, to decelerate, to turn.
+
+01:17:47
+That's a harness.
+
+01:17:48
+So we talk about LLM or AI harness when we talk about all the processes.
+
+01:17:57
+the methodologies, the documentation that we use to limit the uh negative, the possible negative impact of
+
+01:18:08
+how AI work, which is fundamentally trying to guess what is the next word, and maximize its value, meaning helping us in the task that
+
+01:18:21
+can be uh hard to automate um deterministically but with the help of an AI can be um
+
+01:18:32
+automated uh at least partially which for many many tasks can be very very convenient benedicta
+
+01:18:46
+Um my question is, with all the predictive nature it has, why does it oftentimes give wrong answers?
+
+01:18:55
+If you're not grounded in the um maybe topic you are accent it, it gives you wrong answers sometimes and by the time you know like oh this is wrong it now like correct itself
+
+01:19:08
+Yeah, this is exactly what I was saying about the AI is watching on uh is is walking is listening to you while about where it needs to go, but watching only their feet.
+
+01:19:22
+only the next step meaning that sometimes they just like get off track and that's exactly what happens
+
+01:19:30
+So sometimes if the road is really wide, meaning that you are asking something that is in their training, that is very basic, or that is
+
+01:19:41
+They have seen many, many times, then they won't get off track because it's okay, the road is wide.
+
+01:19:48
+But when you get to topics that are more specific to your specific uh context, does your specific work.
+
+01:19:55
+then you can imagine that the world becomes much more narrow.
+
+01:19:58
+So when the narrower the road, the more chance
+
+01:20:03
+for the AI who's just watching their own steps, instead of watching in front of them, instead of having an idea of where am I going, what am I doing, why are they asking this question, the more chances for the AI to go off track.
+
+01:20:15
+So that's what happens when you get wrong.
+
+01:20:19
+Okay, thank you.
+
+01:20:22
+Which is why it's often recommended uh as a very practical step to um
+
+01:20:29
+To start f a new station fresh when you have a different type of questions to ask because it's essentially asking them to jump
+
+01:20:38
+From one part of the cloud to the next part.
+
+01:20:41
+And some the the large AI models can do it.
+
+01:20:45
+But the um
+
+01:20:48
+the smaller AI models or the cheaper ones really struggle with this.
+
+01:20:53
+I I I will I remember as well the question about the economic model.
+
+01:20:57
+So
+
+01:20:58
+I was talking about AI agents and the dependency on AI agents.
+
+01:21:02
+So AI agents, what they have put to the front is the necessity, even for the best.
+
+01:21:12
+uh and probably forever for of AI models um to have a strong harness okay like a very clear box have essentially you have to have fence on the road right there they are walking
+
+01:21:25
+Sometimes they will bounce, uh, for example, because they didn't ask you from which airport you are departing from.
+
+01:21:32
+So you need the
+
+01:21:34
+uh a fence on the road that will tell them no you need to go back to the road and then they will bounce and bounce but at the very least they will
+
+01:21:42
+be able to walk autonomously uh within the fences that you've built.
+
+01:21:47
+That's what the harness is, if we take that's that metaphor.
+
+01:21:53
+Just a question on that harness.
+
+01:21:55
+There is also the data privacy training to add to that
+
+01:22:04
+Because that's another point that sometimes using uh AI you feel um vulnerable
+
+01:22:13
+in terms of the data you are using and let alone the debate as you are working for them
+
+01:22:25
+as because you're helping them training their models, let alone that, but the data privacy that you are using, for example, from
+
+01:22:34
+uh project users or not necessarily that can be anonymized but any data.
+
+01:22:41
+Is there is there also the this hardness also
+
+01:22:45
+is contemplating that that condition because it's also interesting an interesting debate and also uh interesting to uh use this to
+
+01:22:55
+trust a little bit more in this practi very practical tool.
+
+01:23:00
+Yeah totally.
+
+01:23:01
+So the harness is anything
+
+01:23:04
+that you do as uh so it doesn't it doesn't make sense for chatbot right because a chatbot you just talk to them you can't do much to them the best you can do is sometimes
+
+01:23:15
+Give them like instructions to say uh don't use long sentences, etc.
+
+01:23:20
+But you cannot control their behavior.
+
+01:23:23
+Uh but their harness
+
+01:23:25
+Maybe, for example, if you use the AI to say summarize meetings, instead of giving the meeting transcript directly to the AI, you have a tool that is specialized in anonymizing.
+
+01:23:39
+So a tool that detects personal information that will anonymize before sending to the AI.
+
+01:23:45
+That's an harness.
+
+01:23:47
+That's anything that sort of
+
+01:23:49
+uh limits the potential negative impact of DAI, whether by limiting what they have access to, so maybe removing the tool that allows them to delete files.
+
+01:24:01
+uh giving them only files that have been anonymized, blocking them from using the internet, all of that can be unharnessed, but a harness can be also not just in terms of
+
+01:24:11
+um blockage but also guidance like um arrows on the floor if they're looking at their feet okay so I'm gonna I'm gonna draw on the floor so that can be um guidance so
+
+01:24:24
+And I'm going to to we're going to see that in the next class, but you you have this concept called skills where you can document processes
+
+01:24:36
+that the AI can follow.
+
+01:24:38
+So instead of hoping that the AI understands how to say um
+
+01:24:44
+uh summarize your meetings exactly like you need it or maybe to rewrite um to uh rewrite your report exactly like your funder wants it
+
+01:24:57
+you can document protocols that guide DAI to say don't try to guess here is how you should do it.
+
+01:25:07
+And that's an example of harness.
+
+01:25:09
+And those harness have made even the best model very much more productive.
+
+01:25:18
+And this is also true for open source models because there are open source models.
+
+01:25:25
+And those open source models, they are not today at the point where
+
+01:25:30
+anyone can uh use them even though like most recent funds that's very tiny open source models in not open source but very tiny models on their phone that does things like detecting text or
+
+01:25:43
+um uh detecting faces in the picture, etc.
+
+01:25:47
+But um there are more and more work on open source models that
+
+01:25:53
+Hopefully one day we'll be able to run easily on your computer or we'll be able to be provided with by organization with like strong ethical um
+
+01:26:06
+Foundations uh and those open source models even if even if they will never get as powerful as something that
+
+01:26:15
+Google can make because Google has trillions in the bank to keep training, training, training their um their age, their LLM.
+
+01:26:23
+But
+
+01:26:24
+with the right harness, we with the right tooling.
+
+01:26:29
+Zoos models can be already get there get us there 80% of the way.
+
+01:26:36
+to the kind of task that as people working in the civic space or in governments, et cetera, we would like to do.
+
+01:26:46
+So that dependency is not a fatality
+
+01:26:50
+Um and uh this is still a a fast evolving space.
+
+01:26:59
+So um I I we will have the time to to talk about it more, but I wanted uh because this is this is a key addition to
+
+01:27:11
+The curriculum this year I wanted to take the time to explain to you from the beginning what are we talking about?
+
+01:27:18
+Why are we talking about this?
+
+01:27:19
+But the core
+
+01:27:23
+The core idea of um uh tut.
+
+01:27:37
+The core idea of the the the course is um not to
+
+01:27:48
+not to simply learn about AI, but to learn about how AI fits in um the uh
+
+01:27:59
+in in the data work that we have to do and we will have to do um as um
+
+01:28:07
+um people working uh in the civic sector.
+
+01:28:11
+So um
+
+01:28:20
+I will share some slides.
+
+01:28:34
+Okay, so sharing
+
+01:28:47
+I'm not sure if it's large enough.
+
+01:28:55
+Okay.
+
+01:28:58
+Can you see my screen?
+
+01:29:01
+Okay.
+
+01:29:02
+So let's let's for for a second let's get AI out of the way.
+
+01:29:07
+So we talked about what AI is.
+
+01:29:09
+And now I there's AI and there's data in the program.
+
+01:29:14
+So let's talk about data.
+
+01:29:17
+And
+
+01:29:19
+And we'll I'll come back to you very quickly.
+
+01:29:22
+You'll understand why I'm presenting this now.
+
+01:29:25
+So in 2012, there is a program that was created called the School of Data under the Open Knowledge Foundation.
+
+01:29:34
+I was still a student at the time, but the School of Data became this program dedicated to training users of
+
+01:29:46
+Ideally open data, it was part of the open data movement, um, in making better use of data.
+
+01:29:52
+So journalists, civic actors, etc.
+
+01:29:55
+And the program expanded very quickly.
+
+01:29:58
+Myself, I started the French version in 2014.
+
+01:30:04
+And then I was recruited in the international team and kept working in the School of Data team.
+
+01:30:11
+And one of the key
+
+01:30:14
+Key resource that we've been using and I've been using and I still use and I will use forever.
+
+01:30:22
+around data work is called the data pipeline.
+
+01:30:27
+And I really encourage you to I will share the slide.
+
+01:30:31
+I will share everything about that.
+
+01:30:33
+that so don't worry about too much um um i really encourage you to um to try to adopt it as much as you can in your work
+
+01:30:46
+Why?
+
+01:30:47
+The when when we try to to to to work with data, as many of you have mentioned, one of the challenges is
+
+01:30:58
+Defining what we need and also verifying the quality of the data.
+
+01:31:03
+But there are steps in between that also have their challenges.
+
+01:31:09
+And it's very
+
+01:31:12
+It's very easy when doing an uh data project, even a small one, to sort of like take a shortcut at the beginning and then um
+
+01:31:24
+And then ended up accumulating errors or bias or imprecision in your process that makes the end process very messy.
+
+01:31:33
+So that's one common pain point for people who work with data regularly.
+
+01:31:40
+For people who do not work with much with data, and that may be you, that may be a colleague of yours, a colleague of yours.
+
+01:31:48
+That may meet people you you work and you you work with and that are your beneficiaries.
+
+01:31:53
+One of the main challenges is
+
+01:31:56
+I know that I need to use data and we were talking about collecting data with intention.
+
+01:32:02
+I know that I yes, thank you for sharing the link.
+
+01:32:07
+I know that I need to collect data.
+
+01:32:10
+I know that data can be useful for my business, for uh my nonprofit, for um the my my team within the UN headquarters.
+
+01:32:19
+Um but
+
+01:32:21
+Okay, what where is the data that is actually useful?
+
+01:32:25
+Uh where what do I do with it?
+
+01:32:27
+Where do I go?
+
+01:32:28
+Um
+
+01:32:29
+Knowing where to start is one of the biggest, biggest problems.
+
+01:32:34
+And I'm talking from in like working with hundreds of
+
+01:32:39
+nonprofits and governments uh over the years from like transparency international on corpor on their corruption global corruption barometer to governments working on COVID vaccination data
+
+01:32:54
+to indigenous groups trying to get data about which companies are getting forestry license to know if their rights are being encroached.
+
+01:33:06
+All of them have the same question as, okay, where where do I start with this problem that I'm trying to solve?
+
+01:33:13
+I know that I need data to solve it.
+
+01:33:16
+I know that I know I may even know where the data is.
+
+01:33:20
+and how to collect it, but where do I start to have a clear vision from beginning to end about my project?
+
+01:33:26
+This is what the data pipeline gives you.
+
+01:33:29
+The data pipeline is a seven-step process that gives you the key pieces
+
+01:33:38
+For any project of any size to go from beginning to end of the project
+
+01:33:46
+It's not necessary uh we call it we call it a pipeline, it's not necessarily a fully circular process.
+
+01:33:52
+You often have two groups.
+
+01:33:55
+You have, well, three groups.
+
+01:33:57
+You have define that it's it's in own thing most of the time.
+
+01:34:02
+Then you have find, get, and verify.
+
+01:34:05
+If you've worked with data, you know that cycle, right?
+
+01:34:08
+It's like, oh, I found the data, I downloaded it, maybe I scrapped it, maybe I got it from the API, and then verifying, eh, actually, like there's half of the data I need missing, it's not enough.
+
+01:34:19
+Or
+
+01:34:20
+the precision or granularity of the data is not enough.
+
+01:34:23
+So back to the fine step.
+
+01:34:26
+What can what maybe there's another source?
+
+01:34:28
+Maybe I need to find another data.
+
+01:34:30
+Maybe back, maybe back to the defined step where I define what kind of data is using.
+
+01:34:34
+useful to answer my question or maybe I need to ask another question because that question will not be answered because the data is not there.
+
+01:34:42
+So there's this loop that can happen until you can pass
+
+01:34:45
+The point where you have verified that, okay, I got the data, it's clean, it's uh well, it's not clean yet, but it is the data I need.
+
+01:34:55
+I can answer my questions with it.
+
+01:34:57
+So now I'm gonna start cleaning it.
+
+01:35:00
+And uh you often have as well a sort of verify clean analyze loop
+
+01:35:07
+uh where uh sometimes to verify you you have to clean it a little bit and when you clean it you're like ah now I see that there are a lot of gaps in the data that that's uh an a problem or you analyze and then you see that
+
+01:35:22
+Um actually there's something a bit strange about that that data set or that analysis.
+
+01:35:27
+Let me go back to cleaning the data to make sure I'm not
+
+01:35:31
+uh I wasn't wrong in my previous step.
+
+01:35:33
+So it can be around the loop, but broadly the data pipeline is the tool, the harness
+
+01:35:43
+that you can use to essentially have a clear vision uh
+
+01:35:50
+from beginning to the end of your data project.
+
+01:35:54
+It's not necessarily easy, depending on the data project.
+
+01:35:57
+But imagine and this is something I do with my journalism students.
+
+01:36:05
+So if I do something like um
+
+01:36:22
+Um give me a Wikipedia page with a table that has like
+
+01:36:29
+some data in a table format.
+
+01:36:34
+Anything, any topic.
+
+01:36:43
+No one has a favorite Wikipedia page.
+
+01:36:53
+So I mean no way, for example Wikipedia Winter Olymp Olympics
+
+01:37:08
+Um, okay, I have a table here.
+
+01:37:20
+Homicide Statistics by Gender
+
+01:37:29
+Okay.
+
+01:37:35
+Who knows about import HTML?
+
+01:37:43
+Who doesn't know about import HTML?
+
+01:37:46
+Just to confirm, is it the idea of data scrubbing, something like this?
+
+01:37:52
+Yes.
+
+01:37:54
+Ah okay.
+
+01:37:54
+Yes, I have done it a little bit, but not a lot.
+
+01:37:59
+Okay.
+
+01:38:03
+Uh import HTML, then I want
+
+01:38:11
+uh the table and then i will let it guess which table i need
+
+01:38:23
+Bam, okay, so this is my table
+
+01:38:33
+So what did I do here?
+
+01:38:36
+I started a data project
+
+01:38:40
+But I started with the get phase.
+
+01:38:43
+Like, okay, where do I get that data?
+
+01:38:45
+This is this is valid.
+
+01:38:46
+This is possible.
+
+01:38:48
+But then I now stare at the data and I will have I will have to say, okay, what what do I do with this?
+
+01:38:56
+What do I do?
+
+01:38:57
+Then uh then I have to come back
+
+01:39:02
+To the define step.
+
+01:39:03
+Okay.
+
+01:39:04
+When I was saying where do I find data that I can use that's a fine step?
+
+01:39:10
+I got it by using import HTML.
+
+01:39:13
+I could have like copy-pasted.
+
+01:39:15
+I could have downloaded in other ways.
+
+01:39:18
+I could have used the Wikipedia's API.
+
+01:39:20
+We talk about those
+
+01:39:21
+those concepts later uh but eventually at some point you have to ask what do i do with this where do i go and this is where this is why the defined step is there at the beginning
+
+01:39:34
+And this is where you will start to think, okay, maybe I just want to have the evolution of the
+
+01:39:47
+uh ratio of uh the to our page is about
+
+01:39:56
+Homicide statistic, homicide statistics by gender, so I want to see the evolution.
+
+01:40:02
+Okay, but
+
+01:40:04
+This is, when I say I want to see the evolution, this is a typical case of someone working with data without an intention.
+
+01:40:12
+Why do I want to see this evolution?
+
+01:40:15
+What is my purpose?
+
+01:40:16
+Like, do I want to uh compare within country?
+
+01:40:22
+a cross country, uh a cross gender within a specific gender.
+
+01:40:27
+You can see that like from from just trying to tease out what I'm trying to do, I have like five different questions that come up
+
+01:40:34
+And those five different questions will require a different uh slicing of the data, will require maybe a different verification.
+
+01:40:43
+Because it's not the same to say uh I'm going to verify those data, those data points for say Ivory Coast.
+
+01:40:52
+uh over the years and compare versus come trying to compare ivor ivory coast and senegal where the
+
+01:41:00
+data collection process someone was mentioning that the data collection process is maybe very different.
+
+01:41:06
+So that means that unless
+
+01:41:08
+I take the time to define what I want and then to then verify the sources of my data, the methodology process, etc.
+
+01:41:18
+I can rush headfirst into something.
+
+01:41:21
+I can make a graph.
+
+01:41:22
+Oh yes, I say Google, please make me a graph.
+
+01:41:26
+And it will do something.
+
+01:41:29
+Well, it doesn't do something very interesting here, but it will try to do something, but it doesn't mean that this thing that I've created means anything.
+
+01:41:38
+And if we want to be intentional, if we want to have a clear objective, whether it's to create something that has meaning for the people we're trying to support.
+
+01:41:52
+or for the question we're trying to answer, or to simply not to get lost in the mass of possible data points and analysis points that we can follow.
+
+01:42:04
+That's what the data pipeline.
+
+01:42:11
+Is there a question?
+
+01:42:15
+So where does the data management please go ahead?
+
+01:42:19
+Sorry.
+
+01:42:20
+No, just because um if I go to any other
+
+01:42:26
+um website not Wikipedia I can do the same thing um you it to many it depends on how the website is um
+
+01:42:37
+uh present the data but if it's a simple html page yes it's it's possible okay yeah that was a question
+
+01:42:49
+So I have a question.
+
+01:42:51
+Where does the data management falls in
+
+01:42:56
+this data pipeline meaning storing it or deleting it or all this process complicated process that goes behind all this work.
+
+01:43:07
+So data management is more of a
+
+01:43:10
+cross-cutting concern.
+
+01:43:12
+Um there are there are a lot of there are a lot of steps that can become relevant when you
+
+01:43:20
+scale the the project so you can have data storage, data protection, data anonymization, etc.
+
+01:43:28
+So
+
+01:43:28
+The data pipeline does not aim to uh say those are the only steps you will ever need to care about.
+
+01:43:35
+Rather, what it says is that
+
+01:43:38
+Whether you're doing something very small like trying to answer a question with Wikipedia data, where I can get in seconds the data in front of me, and in seconds I can create a graph.
+
+01:43:50
+whether it's that tiny project or something that is much larger with a countrywide data collection, say like the the um
+
+01:44:00
+TI, Transparency International, Global Corruption Barometer, those seven steps will always, always be there.
+
+01:44:11
+And if uh and I challenge you if you find a project where those steps uh are uh are not there.
+
+01:44:20
+You may have a project that is um where finding and getting is like almost irrelevant, right?
+
+01:44:27
+It's like uh
+
+01:44:28
+Well, I found on Wikipedia, I can just copy paste and I got so like it's not it's not like a a full process in itself, but you can easily see how
+
+01:44:38
+Um if I wanted to uh do uh compare the data about homicides with some other data point that is not nicely organized in Wikipedia but is
+
+01:44:51
+In some like behind some arcane filter in the World Bank open data website, then suddenly finding the data becomes a little project because I have to find okay how the World Bank
+
+01:45:02
+define that concept, what names do they use, how the filter works, etc.
+
+01:45:07
+And then getting the data, okay, maybe I found the data on the World Bank websites and I can just download it.
+
+01:45:14
+Great.
+
+01:45:15
+But what if my data is actually behind a government portal and the portal can allow you can allow you to
+
+01:45:24
+only download the data a few rows at a time by choosing say the region and then the municipality.
+
+01:45:31
+You we've all known this kind of
+
+01:45:32
+of forms where you have to give uh fill the form to get a little data and if you want the data for the whole country you have to do that uh uh several hundred times
+
+01:45:43
+So how do I get the data?
+
+01:45:45
+Do I really need to do it manually or are there ways to automate that process?
+
+01:45:50
+That's where suddenly find and get are not a single entity, but become two different steps of the project.
+
+01:45:57
+So in small, very small project, the step can be very quick, but it always pays, always pays to think about.
+
+01:46:09
+any data project that you do.
+
+01:46:11
+And I'm and I'm really talking because the last two classes that we'll we'll have, we talk about data projects.
+
+01:46:18
+Well, there will be AI, but data project for internal, um, internal needs and data project for external needs.
+
+01:46:26
+And any project.
+
+01:46:29
+Any project that may be okay, let's organize a report for a funder.
+
+01:46:35
+Let's organize
+
+01:46:37
+an annual report that we'll produce uh every year.
+
+01:46:41
+Let's organize, let's catalogue who are the organization that we've been working with.
+
+01:46:49
+Any of this kind of project where you are structuring information, um, this the data pipeline becomes useful.
+
+01:46:58
+It may not be obvious because you may think, ah, well, I have the data.
+
+01:47:02
+I can just like put it on a spreadsheet somehow and make a graph and bam, I have like the
+
+01:47:08
+portion of organization we've worked with that are NGOs versus governments versus uh businesses.
+
+01:47:13
+Great.
+
+01:47:14
+But is that pros is is that process
+
+01:47:17
+repeatable?
+
+01:47:18
+Can your colleague take over easily and understand the different steps?
+
+01:47:24
+If you need to change the source of the data, is it easy?
+
+01:47:27
+If you need to combine
+
+01:47:29
+uh and bringing uh another data set in there is it easy if you haven't followed a proper
+
+01:47:37
+structured way to get to the last point, this anything beyond the what we call the happy path becomes very, very hard.
+
+01:47:48
+So that the data pipeline is something that we will use to structure our thinking in data work.
+
+01:47:56
+And it's useful regardless of your level of data literacy
+
+01:48:01
+What I found as well by doing by following the evolution of the AI, the generative AI, it's it's also the perfect harness.
+
+01:48:12
+For working with AI on data projects.
+
+01:48:18
+Because anyone who has tried agentic AI with data will know that
+
+01:48:25
+You do not you shouldn't trust the AI with your spreadsheet.
+
+01:48:30
+Um, because they will forget things, they will try to guess a number.
+
+01:48:34
+Uh this is a typical thing where they will see some number
+
+01:48:38
+Go into the part of the cloud that is about say uh budgets and that time they saw that uh
+
+01:48:47
+when uh when this part of the budget was two thousand then this other part was three thousand and in even if your data says
+
+01:48:56
+to 2.
+
+01:48:57
+500 it doesn't matter it will give you 3000 because it's looking at its feet and not understanding what you're trying to to to do
+
+01:49:06
+Which is why it's not that you cannot use it, but if you want to use it, you need to build the fences.
+
+01:49:14
+You need to draw the arrows on the floor and the data pipeline
+
+01:49:20
+to my to my surprise because I I came in like revamping the the classes I was teaching with you and with journalists I came in thinking ah
+
+01:49:30
+I'm gonna have to teach them something completely different, etc.
+
+01:49:33
+But what emerged from uh all the my research in of case studies of
+
+01:49:38
+civic organizations using AI, governments using AIs of like uh I do some programming as well, so I I work a lot with software developers, um, is that the data pipeline is actually the perfect harness
+
+01:49:51
+For us to not get lost in the AI as magic, but rather to constrain it at every step of the way and ensure that what we get out of it as what we need and not um
+
+01:50:05
+hallucination or things that make us m lose more time than help with the process.
+
+01:50:13
+So um
+
+01:50:15
+Next time we're going to start with a little group exercise where uh we're going to discuss
+
+01:50:23
+uh around the data pipeline, where the AI can be useful, where it cannot, etc.
+
+01:50:30
+But that's the introduction I wanted to make.
+
+01:50:34
+about this framework that will structure our thinking in the class and also in the um the on-site workshop.
+
+01:50:44
+Yes
+
+01:50:47
+No, I just wanted to say yes, I understand now the focus, but also are we gonna focus on the technical skills like the tools that we will be using like Excel SQL or whatever?
+
+01:50:59
+Do we have to work on them individually or are we going to discuss them in class and etc?
+
+01:51:05
+I will introduce you to tools.
+
+01:51:07
+So we mostly use a mix of spreadsheets.
+
+01:51:12
+and uh AI agents because we do not have the time to uh go over many tools.
+
+01:51:18
+Um the what's interesting um with AI is before I struggled to essentially run
+
+01:51:26
+um the class through a lot of tools because for each step of the pipeline you need different tools and depending on the project you need the tools that can deal with small data or large data, etc.
+
+01:51:36
+And it it was like a rush
+
+01:51:38
+With AI, you have the possibility to get guided on how to use some of the simpler tools.
+
+01:51:47
+uh that helps with data cleaning or etc.
+
+01:51:50
+Instead of uh a lot of what I would encourage is not necessarily not to ask have AI clean your data but
+
+01:51:57
+Ask AI the questions that can help you find the formula or the the steps in a tool like OpenRefine to do the specific
+
+01:52:08
+uh steps that you need.
+
+01:52:09
+So what we want is to have what I want you is to have in mind
+
+01:52:16
+the harness to have in mind the pipeline to have in mind what does it mean to clean data uh it's tidying data it's editing data it's consolidating data
+
+01:52:27
+We we're gonna discuss this.
+
+01:52:29
+What does it mean to define a project?
+
+01:52:32
+I have um I have oh various
+
+01:52:43
+I have various um tools to break down each step to help you really have a good understanding of okay, how do I define my project?
+
+01:52:53
+I I have a research question.
+
+01:52:56
+The research question is not for researchers.
+
+01:52:59
+It's for anyone who's trying to get some information out of data.
+
+01:53:04
+Anytime you're trying to get some information, some insight about data, you can think of it as an investigation.
+
+01:53:09
+And so every time it's good to have even a basic research question.
+
+01:53:13
+What is my research question?
+
+01:53:15
+Is it an in-country comparison of homicide?
+
+01:53:17
+Is it a cross-country comparison of homicide?
+
+01:53:19
+Those are different research questions which require
+
+01:53:22
+Different data pipelines, even if they can be similar, there are differences.
+
+01:53:26
+Then you will you will make hypothesis as well.
+
+01:53:29
+Hypothesis
+
+01:53:31
+are used by researchers not just um you know to do science they are used to ensure that you avoid
+
+01:53:41
+Um essentially torturing answers out of the data.
+
+01:53:45
+Avoid biasing, creating biases in your work in your work.
+
+01:53:49
+by simply following what seems most likely to do to you rather than making an assumption
+
+01:53:57
+just documenting an assumption before going into the data and then seeing the result.
+
+01:54:02
+And hypothesis, a good hypothesis is is interesting because whether you are right
+
+01:54:07
+or wrong, this says something about the reality that you're trying to observe.
+
+01:54:13
+So if I have an I put an output, this is that um
+
+01:54:19
+Um men are more victims of violence than women, um than
+
+01:54:27
+Whether I'm right or wrong, then there will be something interesting.
+
+01:54:32
+See if I'm right, then maybe that will
+
+01:54:35
+Uh help me go toward the next question about okay, they are more often victims because they are also more often perpetrators
+
+01:54:44
+If I'm wrong, maybe I'm wrong for certain countries where there are like very different societal dynamics.
+
+01:54:51
+And then I will say, oh, that country is an outlier.
+
+01:54:55
+Let me look at that
+
+01:54:56
+Um so that also means that I don't like, you know, remove data that could prove me wrong before I got.
+
+01:55:04
+to analyze the data and uh think about the results.
+
+01:55:07
+So hypothesis is also uh super important, not just in research but in basic data work.
+
+01:55:16
+And then the horizon table is something that we'll dive into, but it's the idea that when I want to if I want to compare the rate of homicides
+
+01:55:33
+Maybe I should have opened the happiness uh Wikipedia page instead because I keep talking about homicide.
+
+01:55:41
+But if I want to compare the rate of homicides
+
+01:55:44
+uh between um senegal what will be my columns in the final data set that will answer my questions
+
+01:55:55
+Okay, so maybe will it be a column about Côte d'Ivoire in Senegal?
+
+01:56:00
+No, probably not.
+
+01:56:02
+I will have uh the core the core data point will be the rate of
+
+01:56:10
+um homicide within a year.
+
+01:56:12
+And so that we have one row for 2016 for Senegal, one row for 2016 for Ivory Coast.
+
+01:56:20
+etc etc breaking down by gender so maybe um the the columns will be the
+
+01:56:28
+the amount by for men, the amount for women, the undeclared or the undecision, and then a total.
+
+01:56:37
+So that is something that
+
+01:56:40
+The data pipeline encourage you to think about from the beginning, like what where exactly am I trying to go?
+
+01:56:47
+For people who among you may have worked a lot with data.
+
+01:56:51
+I'm sure you have already experienced this feeling of I'm in the middle of the data project and I don't even remember where I'm going or like I have a lot of data points and
+
+01:57:03
+I'm not sure how to connect them and I'm not sure where to go.
+
+01:57:07
+I'm not sure how to make sentence.
+
+01:57:09
+Feels like I'm like uh in a swamp uh mentally.
+
+01:57:13
+All those tools helped you stay clear-headed.
+
+01:57:17
+And even more when the AI can think faster, much faster than you, can act much faster than you, you will need to have those tools to stay clear.
+
+01:57:28
+headed you we need to know some tools we will we will use spreadsheets and we will uh make sure that everybody's
+
+01:57:36
+uh confident in using it.
+
+01:57:38
+Um we will use uh AI agents to learn um the
+
+01:57:44
+the tools the actual tools that work on your computer uh with ai and uh we will see how that can help you with
+
+01:57:53
+some data analysis that can help you with learning new tools and how, again, every step of the way, the data pipeline helps you stay clear-headed.
+
+01:58:05
+keep in mind where you're going and um always keep the AI on the short leash when you get to use it.
+
+01:58:17
+Is there any question?
+
+01:58:23
+Last question.
+
+01:58:25
+Yes.
+
+01:58:25
+Yes, my apologies.
+
+01:58:26
+I have a question.
+
+01:58:27
+So does this mean
+
+01:58:29
+in practice that AI agents are replacing manual work on databases through SQL or this kind of stuff
+
+01:58:41
+Uh they they are right now they are not for data work
+
+01:58:52
+There are two types of data work.
+
+01:58:53
+There are data work that is pure structured data work, meaning uh making a SQL query in a database.
+
+01:59:01
+So for this, they are not doing anything that was not possible before, but they are making it much easier.
+
+01:59:13
+And I explain is that you already have um in any big big enough organization has uh what we call an information system.
+
+01:59:24
+where they have uh one or several database with a lot of facts about the organization, whether it's like employees, salaries, um
+
+01:59:34
+uh salary wages and and um like who is supposed to get vacation there is like an information system uh that that can be integrated into a broader
+
+01:59:46
+organizational management system, but there is a database somewhere with data.
+
+01:59:51
+And um you need
+
+01:59:54
+The accountant to get some of that data in a certain way and a certain format, while at the same time, the analyst, um, the business analyst or um the um
+
+02:00:07
+the research and innovation team to have to go from that to get that data and get it in a different way.
+
+02:00:13
+Those things were possible before and could already be automated.
+
+02:00:19
+It just took a lot of experience, a lot of time, and that were that was not um that was not valuable.
+
+02:00:27
+That was not an invest a valuable investment for a lot of organizations.
+
+02:00:31
+Either because they did not see the opportunity or because it was too expensive and their like semi-manual system worked
+
+02:00:45
+Suddenly, and this is where uh this is why there's such a gold rush in in generative AI, is that a lot of those processes
+
+02:00:55
+that were semi-automated, but we've invested like 10,000, 20,000 to automate one part and then we stuck with this because it's too hard to evolve it
+
+02:01:07
+Or it's it's done half manually and no one knows ex except like Joe from the fifth floor.
+
+02:01:14
+Um
+
+02:01:15
+Suddenly those processes you have if you do things well, you have the tools that can learn about your system and do it and do it much
+
+02:01:28
+Learn much faster and implement innovation much faster than previous systems.
+
+02:01:34
+So the AI here is not doing anything that was not possible before.
+
+02:01:39
+it's doing in making it available for uh organizations that did not have the capacity, velocity, knowledge to automate those processes with
+
+02:01:51
+for so that's one thing the second thing about ai is data is that it it never replaces judgment right now
+
+02:02:00
+There is no one who will tell you that AI is able to replace judgment, meaning that there is always a reduced step.
+
+02:02:11
+There is always a very strong harness that ensures that AI never gives you a wrong answer, or if it gives you, it recovers from that wrong answer, or it's detected, or there is a human supervising what the outputs are.
+
+02:02:25
+So in data, what I was telling you is that you will you would you do not want to tell the AI, please clean that data set.
+
+02:02:34
+for me.
+
+02:02:34
+It does not know what the data set uh is supposed to look like.
+
+02:02:39
+It does not have the the your knowledge of the business.
+
+02:02:43
+um logic uh of the priorities.
+
+02:02:46
+It does not know that the gaps here is actually normal because this is
+
+02:02:51
+is about how the the data, the pipeline of generation of the data that means that every fifth of the month there is
+
+02:03:01
+uh the the the the sensors are replaced so there is a gap in the data and it's totally normal.
+
+02:03:08
+But no, it will not find in normal because it's in the the part of the cloud that
+
+02:03:13
+talks about structured data and then gaps are problems and then it will fill your gaps with something, thinking that, oh yes, I've cleaned it for you.
+
+02:03:22
+But that's just fake data.
+
+02:03:24
+That's just something that didn't exist and so making it like it exists doesn't make sense.
+
+02:03:29
+So you have also situations that are not straightforward for an AI model that works by looking at their feet to understand
+
+02:03:38
+And those situations will uh at least in the uh medium turn always require the judgment of um a human.
+
+02:03:49
+And so
+
+02:03:50
+Right now there are very little people who are being replaced.
+
+02:03:55
+The people who are most affected right now are more like developers
+
+02:04:01
+Because AI is very good at writing code.
+
+02:04:03
+And the reason it's very good at writing code is because one, code is text.
+
+02:04:07
+And like most of your process where you go between tools and you don't just use text, but
+
+02:04:12
+Developers are priding themselves to use text as their main tool.
+
+02:04:17
+And so AI works very very well with text.
+
+02:04:19
+And the second thing is that code can be verified.
+
+02:04:23
+The AI can write test to verify that the code works.
+
+02:04:26
+And that helps a developer being able to do more without a close supervision than before, because the AI will write many codes much faster than usual.
+
+02:04:40
+do so that's why um today there's no clear uh indicator that uh from like the kind of work that you you do from what I heard at the beginning when you
+
+02:04:54
+introduce yourself.
+
+02:04:55
+There's no clear indicator that the AI would replace you.
+
+02:04:59
+We're very, very, very far from that.
+
+02:05:02
+Rather, it it is an opportunity for you to like
+
+02:05:07
+Spend less time doing some of the most thankless or uh not not interesting uninteresting work.
+
+02:05:18
+um and uh spend more more time applying what the ai doesn't have which is your judgment but to to sort of let the ai do the thinkless
+
+02:05:29
+uh job uh you need to have those fences around the world you need to have those arrows on the floor because otherwise
+
+02:05:38
+Yeah, you know, even if the the task doesn't seem very complex, we all as humans have actually a very complex model of the world that allows us to make some of
+
+02:05:51
+some tasks very easily without thinking much about it, but the AI is like a baby discovering everything and getting distracted all the time.
+
+02:05:59
+So it needs farness and it needs supervision
+
+02:06:08
+Any questions?
+
+02:06:14
+So um I I will we are at the hour, so I will um let you go.
+
+02:06:25
+For the next class, I want to ask you to think about the definition.
+
+02:06:35
+of data.
+
+02:06:36
+I have mine and I want to compare with yours.
+
+02:06:41
+So we come to the next class with a definition of data and uh we'll go from there.
+
+02:06:49
+If you have any question, um normally in the syllabus that you have received, there is my email address.
+
+02:06:57
+I will stay available to
+
+02:07:00
+Answer your emails um starting next uh starting the next class will will be more hands-on.
+
+02:07:10
+where I will introduce you to tools and we continue with the data pipeline, but we'll be more hands-on.
+
+02:07:16
+And I will also give you things to practice at home right now
+
+02:07:23
+Today was the introduction, definitions, and uh discussions.
+
+02:07:32
+Thank you.
+
+02:07:35
+Thank you.
+
+02:07:36
+Thanks.
+
+02:07:38
+Thank you very much.
+
+02:07:39
+Thank you a lot.
+
+02:07:41
+Yeah, thank you.
+
+02:07:42
+Bye.
+
+02:07:44
+Bye-bye.
+
+02:08:02
+Hello, Cedric.
+
+02:08:04
+Yes.
+
+02:08:05
+Can I ask a question?
+
+02:08:06
+Yes, of course.
+
+02:08:08
+Uh so yeah you mentioned uh so how does the AI models incorporate feedback into improving its output and reducing hallucinations?
+
+02:08:18
+So especially in like niche topics, you mentioned the metaphor of narrow roads.
+
+02:08:22
+Like does it ever become wider eventually?
+
+02:08:24
+Like
+
+02:08:25
+Uh does Google incorporate more training data in those topics for Gemini or does it like assume like it's uh what's it doing?
+
+02:08:34
+So now uh just training on the web doesn't work.
+
+02:08:38
+because there's no more quality um uh text uh and information to be available on the web.
+
+02:08:45
+So what they do is they hire experts
+
+02:08:49
+to um and this is something I haven't talked about much, but there is a phase, there is a training step of the AI where you essentially feed it a lot of text.
+
+02:09:00
+Um that part what's becomes most important now is to fit it not just random text but quality data.
+
+02:09:08
+So
+
+02:09:09
+uh good well-written text and papers about niche topics um and um maybe papers that are not just like in a standard paper format but well explanations of quantum mechanics.
+
+02:09:23
+etc so like they feed all the good quality text that they can but not just text they feed all good quality code
+
+02:09:31
+They feed uh all good quality images because those those models are multimodal now.
+
+02:09:38
+They can also analyze sound, analyze uh images, etc.
+
+02:09:42
+So that's the first part.
+
+02:09:43
+And then there's a second part.
+
+02:09:46
+That is a traditional machine learning technique, so uh old AI technique called reinforcement learning.
+
+02:09:53
+So that part is essentially uh the AI is tested
+
+02:09:58
+And it's tested on how it answers various questions.
+
+02:10:01
+And then you have human reviewers that says, this is a good answer, this is not a good answer, or this is what you should have responded, or
+
+02:10:09
+You should be nicer when you respond like this, when you spend on this topic, etc.
+
+02:10:13
+So that's reinforcement learning.
+
+02:10:15
+So essentially you hit the AI on the fingers to say, no, that's not good.
+
+02:10:20
+um until it gives an answer um that is uh according to what uh the policy is at openai or google etc
+
+02:10:31
+So they have this two like two-pronged approach where they try to fit quality data that and they pay coders to generate good codes.
+
+02:10:41
+They pay
+
+02:10:42
+uh mathematician to generate good um mathematical data uh they paid writers etc and then on the other side they have the reinforcement part that is like
+
+02:10:52
+Teaching the child to say, no, that's not something you should do.
+
+02:10:57
+No, that's not the response.
+
+02:10:58
+No, when you when we're talking about math, you should stay on the math topics, etc.
+
+02:11:03
+etc.
+
+02:11:05
+Right.
+
+02:11:06
+Uh so does this mean that the data quality that was already trained on, like has there not been any uh
+
+02:11:13
+checks regarding it like has it just been like a black box thing or has there been like a conscious effort to make sure that qualitative is already being used for training the first part of the LLMs
+
+02:11:25
+So there are two parts to your questions.
+
+02:11:29
+The first is the black box.
+
+02:11:35
+This is a black box for most models.
+
+02:11:38
+So you have, I would say you have three types of models with regard to their data source.
+
+02:11:48
+So you have the models that are trained on the wall internet plus
+
+02:11:53
+A lot of pirated books.
+
+02:11:55
+A lot of pirated books, which is why they will never tell you exactly what data goes into the system, because that would be them.
+
+02:12:04
+like announcing they have been you know breaking laws and meta um which has like Facebook uh Facebook company yeah they have
+
+02:12:16
+They are in court right now trying to say that, yeah, but this is fair use to download to torrent books.
+
+02:12:24
+etc because uh they've been caught doing it so um that's the black box black box aspects there's another black box aspect for different type of model which is the models like
+
+02:12:37
+Often the smaller Chinese models.
+
+02:12:42
+There are bigger ones that are powerful, but a lot of the smaller Chinese model or whether open source or closed source, like DeepSeek
+
+02:12:50
+They are often trained on the responses from uh entropic or open AI or Google's models.
+
+02:12:59
+So essentially the um
+
+02:13:03
+They um do the initial training with a lot of data from internet and from books, etc.
+
+02:13:11
+And then the path when they do reinforcement learning.
+
+02:13:14
+They do it instead of doing it themselves because it's very resource intensive.
+
+02:13:17
+You need to have experts on many topics that do the do the work
+
+02:13:22
+Um they essentially um train the model, their model, on the responses that the big models give.
+
+02:13:30
+to make them behave more like a big model, even if they're a bit smaller.
+
+02:13:36
+So this is like a trick that works well up to a point.
+
+02:13:42
+Um, but that also means that they never reveal where their data comes from.
+
+02:13:47
+And then you have some models that are more like um
+
+02:13:50
+from universities and I think the university in Switzerland did that where they did publish they did create a model that is fully open where all the data that they've trained on is fully open
+
+02:14:04
+And that's that's what we the full real open source model um that has that transparency.
+
+02:14:13
+But otherwise, yeah, it's mostly it's mostly a black box and so it could have been trained on A slope as well, right?
+
+02:14:23
+Totally.
+
+02:14:23
+So that's that's one of the that's one of the challenges uh for them is that uh we call that model collapse.
+
+02:14:32
+is if the if everybody's using AI to create text on the internet and people use internet to trend their AI, then suddenly it's the
+
+02:14:41
+the snake eating its own tail.
+
+02:14:44
+But most of the big um big labs
+
+02:14:49
+that train the biggest model, they have already taken that into account and they they use more curated data sets to do that.
+
+02:14:58
+And there are companies that are worth billions.
+
+02:15:00
+their their work is only to create create data sets on math, on geography, on physics, on chemistry, on sociology, on
+
+02:15:10
+on uh literature on etc that's only their job to create this data set and then they sell that to those companies.
+
+02:15:18
+I see.
+
+02:15:19
+Okay.
+
+02:15:19
+So more synthetic data sets.
+
+02:15:21
+Right.
+
+02:15:22
+Uh I guess that's it for now.
+
+02:15:24
+Uh I did have a question in the chat as well.
+
+02:15:27
+Uh so the
+
+02:15:28
+Horizon table is it like the feature selection or is it not the case because you already do the horizon table before getting the data itself?
+
+02:15:39
+So the horizon table is yes, it is feature selection.
+
+02:15:42
+This is about establishing what is the minimal amount of uh
+
+02:15:48
+uh features and data points do I need to answer my question?
+
+02:15:53
+Like so that you don't uh essentially arrive at
+
+02:15:57
+point where you have a lot of data and you're not sure what to keep, what to leave, you constrain yourself from the beginning by saying, uh if I need to answer that question,
+
+02:16:08
+What what should my analysis table look like?
+
+02:16:12
+And that's very important because uh at some maybe at some point you notice that well actually
+
+02:16:19
+Um, I had this assumption that I could access the data, but I cannot.
+
+02:16:23
+So then I need to rethink about what my analysis table would look like without that data.
+
+02:16:29
+Uh, can it answer my question?
+
+02:16:30
+If not, can I use some proxy uh data?
+
+02:16:33
+Um, so that's what it's about.
+
+02:16:35
+It's really about
+
+02:16:37
+uh having this final view.
+
+02:16:39
+So the horizon table in the data pipeline arrives at the end of the clean step.
+
+02:16:46
+Oh okay.
+
+02:16:47
+When you have like all your data verified and then you make it into a shape that is ready to analysis, that's
+
+02:16:54
+where you have a horizon table.
+
+02:16:56
+From there you can run your analysis showing that you have done your feature selection and your bias checks, etc.
+
+02:17:05
+Right.
+
+02:17:06
+Uh just a general question.
+
+02:17:09
+Would we like in the production level or maybe in your experience has there been much uh
+
+02:17:17
+I guess improvements in the section of explainable AI, like like trying to make it less of a black box sort of thing.
+
+02:17:25
+Like especially when I was part of the I saw one of the resources mentioned was a data kind uh
+
+02:17:31
+uh project and I was part of the book club back when I was in the UK.
+
+02:17:34
+So we had discussions about how it is used in the financial sector, for example, and how they use it for deciding credit worthiness, for example, but without
+
+02:17:43
+the LLM having to explain how it got to that result, that sort of thing.
+
+02:17:47
+So like has there been much progress since then?
+
+02:17:50
+Um so um explainable
+
+02:17:53
+AI comes from the previous generation, which is more machine learning.
+
+02:17:59
+Right.
+
+02:17:59
+Where machine learning is the fundamental difference between
+
+02:18:07
+um machine learning um and uh current crops of ai is what the operate on machine learning essentially operates on data points
+
+02:18:18
+So it's really a matter of mathematics and understanding what are the data points that influence a model in a certain way versus another way.
+
+02:18:31
+And um in this sort of paradigm
+
+02:18:39
+There were a lot of machine learning projects that were essentially iterative process where you say, oh, what if I give more data point?
+
+02:18:49
+What do I get?
+
+02:18:50
+Is it better?
+
+02:18:51
+Is the model better at predicting the market?
+
+02:18:53
+uh what if i do this and the explainable ai was this project of saying we want to understand what is the connection between the input
+
+02:19:02
+and the output and we can because um the algorithm inside are um are to some extent explorable
+
+02:19:12
+And so if we explore them well enough, we will be able to, even if there's like 32 steps that end up
+
+02:19:20
+Producing the full algorithm, we can eventually end up understanding the 32 steps.
+
+02:19:26
+And more importantly, we are able to understand what are the risks.
+
+02:19:33
+of training a model a certain way in terms of its usage in the social sphere.
+
+02:19:40
+So that means
+
+02:19:41
+Um is it at risk of discriminating uh people who are out who are not represent well represented in the in the data?
+
+02:19:49
+Is it uh risk
+
+02:19:51
+to um uh bias the decisions in a certain way, etc.
+
+02:19:55
+, etc.
+
+02:19:57
+The risk model in uh generative AI is a bit different.
+
+02:20:02
+Um it's um it is not uh it's a it's able to rethink
+
+02:20:11
+Whereas a traditional machine learning model, once it's given a task to do, it will do it.
+
+02:20:19
+It's just an algorithm that does this.
+
+02:20:20
+The the AI, because it's progressing step by step, it's able to change its path.
+
+02:20:27
+If uh you tell it that it's not working.
+
+02:20:30
+and change its path.
+
+02:20:31
+So it's not just the initial input that matters, but also the input while it's working that matters, which is uh fairly different from the traditional date.
+
+02:20:42
+uh the machine learning models um which makes it even more complex to understand uh we we understand fundamentally like the math and
+
+02:20:55
+um the the the concepts behind why this works but we don't understand first of all why it works so well
+
+02:21:07
+And we don't understand fully uh what is happening inside uh when uh
+
+02:21:17
+um the AI seems to be able to uh rethink its decision or say this or say that.
+
+02:21:25
+We we know that fundamentally it
+
+02:21:28
+It's hallucinating everything, whether it's and sometimes it's hallucinating correctly and sometimes hallucinating incorrectly.
+
+02:21:34
+But that's just one way of seeing it.
+
+02:21:36
+And the other way is saying, okay, but um
+
+02:21:40
+If it it's a bit like saying all humans at the end of the day are just you know cells working together and then doing whatever they were programmed to do.
+
+02:21:50
+But that's one way of seeing the human body, but another way is seeing
+
+02:21:54
+through consciousness, through uh agency, etc.
+
+02:21:57
+So different frames.
+
+02:21:58
+Exactly.
+
+02:21:59
+So people are trying to think about the uh
+
+02:22:02
+this these models through these different frames to understand what is happening from that perspective.
+
+02:22:08
+And that we're very far from having an answer right now.
+
+02:22:12
+Interesting.
+
+02:22:13
+Uh one last question.
+
+02:22:14
+Uh does Chris have a question?
+
+02:22:16
+I mean, see him in the chat.
+
+02:22:19
+Uh
+
+02:22:20
+Okay, I guess I'll just finish mine quickly.
+
+02:22:22
+Uh so the when you say that it hallu hallucinates incorrectly also sometimes, so does that mean that the LLM is not aware that it's coming up with the wrong answer?
+
+02:22:30
+Like it can't say that it doesn't know?
+
+02:22:32
+Like is it
+
+02:22:32
+incapable of doing that.
+
+02:22:34
+It has to be trained.
+
+02:22:35
+Recently some of them have been trained to say but fundamentally doesn't really know
+
+02:22:42
+Fundamentally you you and when you work regularly with LLMs, you will find that they they will tell you an answer.
+
+02:22:52
+Just and it was just a guess.
+
+02:22:54
+And it essentially um uh how can I say that?
+
+02:23:00
+It's it's like uh
+
+02:23:03
+They felt that they could still they were still on the road even though they were not sure about it.
+
+02:23:09
+And so um
+
+02:23:12
+Maybe you know at first the the road is like very nicely paved and then maybe they're on a bit of gravel
+
+02:23:19
+and say like well i can still walk it and so i will continue it they they don't feel when is the time that you as a user want them to
+
+02:23:29
+stop and say oh I'm I'm not on the paved road at this point because they still think oh I can still walk it the the their feet are still moving
+
+02:23:37
+So they will try to give you an answer because it seems that they can find an answer, but they don't have the self-awareness to think, uh well, I'm going farther than um what uh
+
+02:23:51
+I'm going farther than the confidence that I can allow myself to have in my answers.
+
+02:23:58
+So I need to stop there and say, I don't know.
+
+02:24:03
+Yeah.
+
+02:24:04
+Okay, yeah.
+
+02:24:05
+That's it for today.
+
+02:24:06
+Uh thanks a lot, Cedric.
+
+02:24:08
+You're welcome.
+
+02:24:09
+And just on this thing, so the the I was talking about the the monologue that
+
+02:24:13
+that they're having and the the the principle of that monologue is to force the LLM to challenge itself
+
+02:24:21
+So um it will it will work and then it will go on the gravel and then the monologue is um
+
+02:24:28
+essentially forcing the LM to try to challenge itself to have a question that comes and say, oh, but should you really be walking there?
+
+02:24:35
+Or and then now it will be thinking, oh
+
+02:24:38
+uh where should i be working oh i should be working on the pave road let me go back to the pave road etc so that's how they sort of self-correct by having
+
+02:24:46
+uh essentially uh uh a a monologue where they they're trying to challenge themselves about that decision before giving you a final answer.
+
+02:24:56
+And and even the the even that is not
+
+02:25:00
+There's no concept of I reached the final answer.
+
+02:25:05
+Essentially, the service providers, they have found that if you give them like
+
+02:25:13
+One minute 35 seconds of monologue, they generally arrive at a satisfying answer.
+
+02:25:21
+If you give them two minutes, then they get lost in another way.
+
+02:25:26
+If you give them not enough, then they get lost in another way.
+
+02:25:30
+So it's it's really, really uh even the the creators, they they can't tell you, oh, we
+
+02:25:35
+we solved the hallucination problem.
+
+02:25:37
+No, they just found a way that somehow, for some reason, uh
+
+02:25:44
+With general principles, it works in certain conditions and those certain conditions are like improved on the status quo, but it's not um it's not truth or it's not uh reasoning
+
+02:25:57
+Right.
+
+02:25:58
+So like if you give it more context specific, like RAGs or that sort of thing, then it might be better in those niche topics, but not overall.
+
+02:26:06
+Exactly.
+
+02:26:07
+Exactly.
+
+02:26:08
+One of the problems that
+
+02:26:11
+um uh people don't necessarily see with um RAG and this kind of structures that you the AI will see
+
+02:26:23
+what we don't what we don't really appreciate is that when I look at a document that you have written, I I see two things.
+
+02:26:33
+I see the final output, what is written, but I also create a model of what you were thinking about.
+
+02:26:42
+When you were writing the thought process.
+
+02:26:46
+And then I will think about your context.
+
+02:26:48
+Why did you write it?
+
+02:26:49
+Oh, maybe because you work for this organization and that's your framing.
+
+02:26:52
+The I doesn't have this and it doesn't even think about this
+
+02:26:56
+It will just think about what it sees and it tries to ties that to its cloud of data without necessarily
+
+02:27:03
+um sort of understanding your thought process and the fact that it's a human that has written that and there is a there is a logic in how they they wrote this.
+
+02:27:12
+They don't have that assumption because there's no the that's not how they work, which means that what people try to do is to give as much context as possible so that
+
+02:27:21
+um your immediate context, your business context is the closest um uh token or closest words for the AI to use.
+
+02:27:32
+um rather than some random word that may be similar but that but that is completely disconnected from your context.
+
+02:27:39
+But that's also one of the fundamental reasons why
+
+02:27:42
+D AI will give you wrong answers is that it does not have this understanding that uh the artifact
+
+02:27:50
+the the the written word, the written project, report, etc.
+
+02:27:56
+is the result of a process
+
+02:27:58
+And they do not have that intuition about what can what can be that process.
+
+02:28:02
+And but we as humans use that to understand
+
+02:28:06
+Maybe that, yeah, maybe actually that document is probably biased because you wouldn't want to uh highlight the the bad things that your organization did or
+
+02:28:17
+Maybe it's actually optimistic because it's for a funder that unless you tell them specifically, they won't have the any mind, so to say, to understand that.
+
+02:28:31
+Right.
+
+02:28:32
+So it won't be able to detect say implicit bias, that sort of thing.
+
+02:28:35
+Like uh exactly.
+
+02:28:37
+They not better than like a machine d detecting bias.
+
+02:28:41
+It will be able to
+
+02:28:43
+If you tell them detect implicit bias, then they will go to the documentation that they have in their mind about what are the common patterns for detecting
+
+02:28:51
+uh implicit bias and they will use that but they will not be able to connect automatically uh your context to um
+
+02:29:00
+to uh to whatever they're reading.
+
+02:29:03
+And so all the harness that um and the tools that we're gonna see the the the harness that they build are all about
+
+02:29:11
+trying to capture as much context of the user as possible in order to avoid the AI going in weird direction too much.
+
+02:29:21
+And even that is a lot of work.
+
+02:29:24
+Uh but still I'm not uh panacea.
+
+02:29:28
+Right.
+
+02:29:29
+So a lot of it depends on the prompt engineering as well then.
+
+02:29:32
+So it's just like how well you see the prompt itself?
+
+02:29:35
+Uh yeah yes
+
+02:29:37
+Yes, yes, definitely.
+
+02:29:40
+It's still very much prompt engineering.
+
+02:29:43
+There is more to it now, but it's
+
+02:29:46
+uh still very much prompt engineering and it's also uh depends on the tool that they have available on the training so for example the the tools that we're gonna see the ai agents
+
+02:29:57
+that we're gonna use, they are trained to before trying to answer a question, search the folder where you are operating to see if there is some context that you can use.
+
+02:30:07
+And to search that folders, they need to be trained on being able to use tools that help them to find to list the files in the folder and then to read the files, etc.
+
+02:30:17
+So it's not just context engineering, it's also
+
+02:30:21
+uh it's also we call that uh it's not just prompt engineering it's also what we call context engineering which is make uh making sure that the a i
+
+02:30:33
+captures as much context as possible uh when working with you to be able to constrain the space of possible next tokens that they will respond
+
+02:30:47
+Right.
+
+02:30:47
+Sorry, I've taken up too much of your time already.
+
+02:30:50
+Uh would you happen to have time for one last thing?
+
+02:30:53
+It's I mean I just
+
+02:30:55
+Uh right.
+
+02:30:55
+So how does this sort of thing work for like if you're trying to uh if the user is uh trying to get some answers in like a low resource language, then
+
+02:31:05
+Would it would the machine automatically translate it to like a commonly used one like an English before doing that?
+
+02:31:11
+Or like that is that is a very good point.
+
+02:31:15
+Um
+
+02:31:16
+So low resources language, and that's not just the the new, that has always been a problem, right?
+
+02:31:22
+You're probably aware of that in machine learning, in translation, um uh from the moment where we uh
+
+02:31:30
+have started to move toward um uh statistical methods, then obviously um the resource language have less data and so are less represented.
+
+02:31:41
+And it's true for AI, and uh studies show that um uh AI models are less intelligent.
+
+02:31:50
+when you talk to them in a non-English language in general, and it becomes worse the farther you get away from English.
+
+02:32:00
+So that's really, really important to be aware of because that's a bias, like a natural bias in a way for any statistical tool.
+
+02:32:11
+but uh something that is not necessarily very acknowledged by um by the creators.
+
+02:32:17
+And so you have programs for building AI tools that are specifically trained
+
+02:32:23
+on the rules and grammars and etc of uh low resource language.
+
+02:32:29
+Generally they will be able to uh
+
+02:32:32
+I mean, especially the one from Google, etc.
+
+02:32:34
+, they have been traded on many uh multilingual text.
+
+02:32:37
+So a lot of them uh are able to somewhat hold a conversation, but they're not um
+
+02:32:45
+uh essentially when they are in the part of the cloud where they speak uh hindi uh or or even Japanese etc then
+
+02:32:55
+they end up being stuck because the token that has say the reasoning about quantum mechanics is very far.
+
+02:33:05
+Right.
+
+02:33:06
+So it's a jump that they struggle to do.
+
+02:33:08
+So they get less intelligence.
+
+02:33:10
+They will uh essentially do a detour or do less interesting answers.
+
+02:33:15
+Okay, yeah, gotcha.
+
+02:33:17
+Uh yeah.
+
+02:33:18
+Uh sorry for taking up so much of your time.
+
+02:33:20
+Thanks a lot, Cedric.
+
+02:33:21
+Cedric, sorry, is the is the over?
+
+02:33:26
+Yes.
+
+02:33:26
+Because I wasn't waiting.
+
+02:33:28
+Okay, so I will stop the recording.
+
